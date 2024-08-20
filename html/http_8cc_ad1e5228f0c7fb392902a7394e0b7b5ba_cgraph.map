@@ -1,5 +1,0 @@
-<map id="sylar::http::operator&lt;&lt;" name="sylar::http::operator&lt;&lt;">
-<area shape="rect" id="node1" title="流式输出HttpResponse" alt="" coords="5,37,179,63"/>
-<area shape="rect" id="node2" href="$classsylar_1_1http_1_1HttpResponse.html#a5d76693162fa70d965974e63d6b534a9" title="序列化输出到流" alt="" coords="227,29,413,71"/>
-<area shape="rect" id="node3" href="$http_8cc.html#ae173fedd3819839ca2d0dcd6834f7245" title="将HTTP状态枚举转换成字符串" alt="" coords="461,29,640,71"/>
-</map>

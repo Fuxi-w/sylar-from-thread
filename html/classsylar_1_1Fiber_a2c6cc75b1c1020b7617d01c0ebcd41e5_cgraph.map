@@ -1,5 +1,0 @@
-<map id="sylar::Fiber::resume" name="sylar::Fiber::resume">
-<area shape="rect" id="node1" title="将当前协程切到到执行状态" alt="" coords="5,42,156,69"/>
-<area shape="rect" id="node2" href="$classsylar_1_1Scheduler.html#a8b802736f5c20b477def0838b92804cf" title="获取当前线程的主协程" alt="" coords="204,5,393,47"/>
-<area shape="rect" id="node3" href="$classsylar_1_1Fiber.html#a600311d8bef1d565f02373d425d7e482" title="设置当前正在运行的协程，即设置线程局部变量t_fiber的值" alt="" coords="223,71,374,98"/>
-</map>

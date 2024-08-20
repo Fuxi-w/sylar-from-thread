@@ -1,5 +1,0 @@
-<map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$classsylar_1_1LogAppender.html" title="日志输出地，虚基类，用于派生出不同的LogAppender" alt="" coords="5,31,152,57"/>
-<area shape="rect" id="node2" href="$classsylar_1_1FileLogAppender.html" title="输出到文件" alt="" coords="209,5,380,32"/>
-<area shape="rect" id="node3" href="$classsylar_1_1StdoutLogAppender.html" title="输出到控制台的Appender" alt="" coords="200,56,389,83"/>
-</map>

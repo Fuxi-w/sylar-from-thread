@@ -1,5 +1,0 @@
-<map id="sylar::GetFiberId" name="sylar::GetFiberId">
-<area shape="rect" id="node1" title="获取协程id" alt="" coords="5,29,135,56"/>
-<area shape="rect" id="node2" href="$classsylar_1_1Fiber.html#a6231bf3c60b4adea841575670cdf2fc3" title="获取当前协程id" alt="" coords="183,29,352,56"/>
-<area shape="rect" id="node3" href="$classsylar_1_1Fiber.html#a357f571db2dc90eb942e4e7fef62d251" title="获取协程ID" alt="" coords="400,29,535,56"/>
-</map>

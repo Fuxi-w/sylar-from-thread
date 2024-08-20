@@ -1,5 +1,0 @@
-<map id="sylar::ByteArray::writeInt32" name="sylar::ByteArray::writeInt32">
-<area shape="rect" id="node1" title="写入有符号Varint32类型的数据" alt="" coords="5,5,205,32"/>
-<area shape="rect" id="node2" href="$classsylar_1_1ByteArray.html#aacc7d361418de9bffd69a2c4bbf02f7d" title="写入无符号Varint32类型的数据" alt="" coords="253,5,464,32"/>
-<area shape="rect" id="node3" href="$classsylar_1_1ByteArray.html#aa02ff9c7ab29ee312e3ad8043acf28dc" title="写入size长度的数据" alt="" coords="512,5,679,32"/>
-</map>

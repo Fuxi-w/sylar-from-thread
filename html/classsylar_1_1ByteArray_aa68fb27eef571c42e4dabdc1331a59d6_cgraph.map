@@ -1,5 +1,0 @@
-<map id="sylar::ByteArray::readFuint8" name="sylar::ByteArray::readFuint8">
-<area shape="rect" id="node1" title="读取uint8_t类型的数据" alt="" coords="5,5,208,32"/>
-<area shape="rect" id="node2" href="$classsylar_1_1ByteArray.html#add0a86b9e7ac29fe11e9a9efc3f25699" title="读取size长度的数据" alt="" coords="256,5,419,32"/>
-<area shape="rect" id="node3" href="$classsylar_1_1ByteArray.html#a763d792f91cfd84072692ac0cdef8efc" title="返回可读取数据大小" alt="" coords="467,5,681,32"/>
-</map>

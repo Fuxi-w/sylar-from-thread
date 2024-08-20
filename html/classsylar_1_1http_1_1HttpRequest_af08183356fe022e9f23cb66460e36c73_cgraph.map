@@ -1,4 +1,0 @@
-<map id="sylar::http::HttpRequest::dump" name="sylar::http::HttpRequest::dump">
-<area shape="rect" id="node1" title="序列化输出到流中" alt="" coords="5,29,183,71"/>
-<area shape="rect" id="node2" href="$http_8cc.html#a371c464090835dffd6f29dd618cdb01c" title="将HTTP方法枚举转换成字符串" alt="" coords="231,29,417,71"/>
-</map>

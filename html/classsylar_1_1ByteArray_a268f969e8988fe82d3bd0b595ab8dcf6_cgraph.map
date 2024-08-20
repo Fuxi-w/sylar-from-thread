@@ -1,4 +1,0 @@
-<map id="sylar::ByteArray::writeFint8" name="sylar::ByteArray::writeFint8">
-<area shape="rect" id="node1" title="写入固定长度int8_t类型的数据" alt="" coords="5,5,204,32"/>
-<area shape="rect" id="node2" href="$classsylar_1_1ByteArray.html#aa02ff9c7ab29ee312e3ad8043acf28dc" title="写入size长度的数据" alt="" coords="252,5,419,32"/>
-</map>

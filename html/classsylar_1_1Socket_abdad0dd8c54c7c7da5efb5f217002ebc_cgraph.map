@@ -1,4 +1,0 @@
-<map id="sylar::Socket::listen" name="sylar::Socket::listen">
-<area shape="rect" id="node1" title="监听socket" alt="" coords="5,5,155,32"/>
-<area shape="rect" id="node2" href="$classsylar_1_1Socket.html#a86d7b7034c6ee0462dbe6af951c078e6" title="是否有效(m_sock != &#45;1)" alt="" coords="203,5,359,32"/>
-</map>

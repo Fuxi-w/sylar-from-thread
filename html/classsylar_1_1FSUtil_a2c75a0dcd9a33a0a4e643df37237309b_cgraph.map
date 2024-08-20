@@ -1,4 +1,0 @@
-<map id="sylar::FSUtil::Rm" name="sylar::FSUtil::Rm">
-<area shape="rect" id="node1" title="删除文件或路径" alt="" coords="5,5,136,32"/>
-<area shape="rect" id="node2" href="$classsylar_1_1FSUtil.html#a02e6f68ccc238f7984e3085bd2a2f2c5" title="删除文件，参考unlink(2)" alt="" coords="184,5,335,32"/>
-</map>

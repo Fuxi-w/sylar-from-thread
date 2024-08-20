@@ -1,4 +1,0 @@
-<map id="sylar::TimerManager::listExpiredCb" name="sylar::TimerManager::listExpiredCb">
-<area shape="rect" id="node1" title="获取需要执行的定时器的回调函数列表" alt="" coords="5,22,163,63"/>
-<area shape="rect" id="node2" href="$util_8cpp.html#a3a496fbdbd27f04cba087a64add0306c" title="获取当前启动的毫秒数，参考clock_gettime(2)，使用CLOCK_MONOTONIC_RAW" alt="" coords="211,29,367,56"/>
-</map>

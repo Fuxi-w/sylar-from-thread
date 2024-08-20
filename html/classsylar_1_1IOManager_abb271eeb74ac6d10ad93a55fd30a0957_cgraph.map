@@ -1,5 +1,0 @@
-<map id="sylar::IOManager::IOManager" name="sylar::IOManager::IOManager">
-<area shape="rect" id="node1" title="构造函数" alt="" coords="5,42,217,69"/>
-<area shape="rect" id="node2" href="$classsylar_1_1IOManager.html#a887c03f40a7360591ca9b945b7a76714" title="重置socket句柄上下文的容器大小" alt="" coords="265,5,456,47"/>
-<area shape="rect" id="node3" href="$classsylar_1_1Scheduler.html#a028c935d19b263bd0c49c5f65201e8b5" title="启动调度器" alt="" coords="279,71,443,98"/>
-</map>

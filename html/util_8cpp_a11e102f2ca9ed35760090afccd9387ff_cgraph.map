@@ -1,4 +1,0 @@
-<map id="sylar::BacktraceToString" name="sylar::BacktraceToString">
-<area shape="rect" id="node1" title="获取当前栈信息的字符串" alt="" coords="5,29,184,56"/>
-<area shape="rect" id="node2" href="$util_8cpp.html#a979537064cb924a4471df38add5686cb" title="获取当前的调用栈" alt="" coords="232,29,359,56"/>
-</map>

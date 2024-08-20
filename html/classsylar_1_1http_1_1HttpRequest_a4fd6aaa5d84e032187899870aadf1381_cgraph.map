@@ -1,4 +1,0 @@
-<map id="sylar::http::HttpRequest::getHeaderAs" name="sylar::http::HttpRequest::getHeaderAs">
-<area shape="rect" id="node1" title="获取HTTP请求的头部参数" alt="" coords="5,22,183,63"/>
-<area shape="rect" id="node2" href="$http_8h.html#a80a3a1218593d2a5e4613d9900c3b387" title="获取Map中的key值,并转成对应类型" alt="" coords="231,29,364,56"/>
-</map>

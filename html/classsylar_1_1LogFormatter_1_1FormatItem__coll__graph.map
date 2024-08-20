@@ -1,3 +1,0 @@
-<map id="sylar::LogFormatter::FormatItem" name="sylar::LogFormatter::FormatItem">
-<area shape="rect" id="node1" title="日志内容格式化项，虚基类，用于派生出不同的格式化项" alt="" coords="5,5,155,112"/>
-</map>

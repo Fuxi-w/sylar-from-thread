@@ -1,4 +1,0 @@
-<map id="sylar::Env::init" name="sylar::Env::init">
-<area shape="rect" id="node1" title="初始化，包括记录程序名称与路径，解析命令行选项和参数" alt="" coords="5,5,120,32"/>
-<area shape="rect" id="node2" href="$classsylar_1_1Env.html#a96196f29d551abefbd9c3f663bf3b1e6" title="添加自定义环境变量，存储在程序内部的map结构中" alt="" coords="168,5,285,32"/>
-</map>

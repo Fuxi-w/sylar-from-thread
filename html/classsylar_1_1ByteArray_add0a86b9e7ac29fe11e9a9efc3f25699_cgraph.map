@@ -1,4 +1,0 @@
-<map id="sylar::ByteArray::read" name="sylar::ByteArray::read">
-<area shape="rect" id="node1" title="读取size长度的数据" alt="" coords="5,5,168,32"/>
-<area shape="rect" id="node2" href="$classsylar_1_1ByteArray.html#a763d792f91cfd84072692ac0cdef8efc" title="返回可读取数据大小" alt="" coords="216,5,431,32"/>
-</map>

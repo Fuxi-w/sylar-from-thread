@@ -1,4 +1,0 @@
-<map id="sylar::http::HttpResponse::setRedirect" name="sylar::http::HttpResponse::setRedirect">
-<area shape="rect" id="node1" title="设置重定向，在头部添加Location字段，值为uri" alt="" coords="5,5,192,47"/>
-<area shape="rect" id="node2" href="$classsylar_1_1http_1_1HttpResponse.html#ac2937471901b99ae8a2e0c14e3356ffe" title="设置响应头部参数" alt="" coords="240,5,427,47"/>
-</map>

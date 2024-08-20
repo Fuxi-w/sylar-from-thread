@@ -1,4 +1,0 @@
-<map id="sylar::Scheduler::schedule" name="sylar::Scheduler::schedule">
-<area shape="rect" id="node1" title="添加调度任务" alt="" coords="5,5,197,32"/>
-<area shape="rect" id="node2" href="$classsylar_1_1Scheduler.html#a142d8cd454d6a8471278506c335302ae" title="通知协程调度器有任务了" alt="" coords="245,5,416,32"/>
-</map>

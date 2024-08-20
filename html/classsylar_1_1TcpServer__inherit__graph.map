@@ -1,7 +1,0 @@
-<map id="sylar::TcpServer" name="sylar::TcpServer">
-<area shape="rect" id="node1" title="TCP服务器封装" alt="" coords="115,175,269,531"/>
-<area shape="rect" id="node4" href="$classMyTcpServer.html" title="自定义TcpServer类，重载handleClient方法" alt="" coords="41,608,170,685"/>
-<area shape="rect" id="node5" href="$classsylar_1_1http_1_1HttpServer.html" title="HTTP服务器类" alt="" coords="195,579,365,715"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,20,189,112"/>
-<area shape="rect" id="node3" href="$classsylar_1_1Noncopyable.html" title="对象无法拷贝,赋值" alt="" coords="213,5,360,127"/>
-</map>

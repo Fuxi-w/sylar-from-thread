@@ -1,5 +1,0 @@
-<map id="sylar::FSUtil::Mv" name="sylar::FSUtil::Mv">
-<area shape="rect" id="node1" title="移动文件或路径，内部实现是先Rm(to)，再rename(from, to)，参考rename" alt="" coords="5,5,133,32"/>
-<area shape="rect" id="node2" href="$classsylar_1_1FSUtil.html#a2c75a0dcd9a33a0a4e643df37237309b" title="删除文件或路径" alt="" coords="181,5,312,32"/>
-<area shape="rect" id="node3" href="$classsylar_1_1FSUtil.html#a02e6f68ccc238f7984e3085bd2a2f2c5" title="删除文件，参考unlink(2)" alt="" coords="360,5,511,32"/>
-</map>

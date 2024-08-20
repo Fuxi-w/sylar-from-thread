@@ -1,6 +1,0 @@
-<map id="sylar::ByteArray::readUint64" name="sylar::ByteArray::readUint64">
-<area shape="rect" id="node1" title="读取无符号Varint64类型的数据" alt="" coords="5,5,212,32"/>
-<area shape="rect" id="node2" href="$classsylar_1_1ByteArray.html#aa68fb27eef571c42e4dabdc1331a59d6" title="读取uint8_t类型的数据" alt="" coords="260,5,463,32"/>
-<area shape="rect" id="node3" href="$classsylar_1_1ByteArray.html#add0a86b9e7ac29fe11e9a9efc3f25699" title="读取size长度的数据" alt="" coords="511,5,673,32"/>
-<area shape="rect" id="node4" href="$classsylar_1_1ByteArray.html#a763d792f91cfd84072692ac0cdef8efc" title="返回可读取数据大小" alt="" coords="721,5,936,32"/>
-</map>

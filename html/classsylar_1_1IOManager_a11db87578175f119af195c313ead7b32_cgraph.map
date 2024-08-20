@@ -1,5 +1,0 @@
-<map id="sylar::IOManager::addEvent" name="sylar::IOManager::addEvent">
-<area shape="rect" id="node1" title="添加事件" alt="" coords="5,46,208,73"/>
-<area shape="rect" id="node2" href="$classsylar_1_1IOManager.html#a887c03f40a7360591ca9b945b7a76714" title="重置socket句柄上下文的容器大小" alt="" coords="261,5,452,47"/>
-<area shape="rect" id="node3" href="$structsylar_1_1ReadScopedLockImpl.html#ac628a0e3211dbaa1544a060702eabb00" title="释放锁" alt="" coords="256,71,457,112"/>
-</map>

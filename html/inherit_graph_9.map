@@ -1,4 +1,0 @@
-<map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$classsylar_1_1ConfigVarBase.html" title="配置变量的基类" alt="" coords="5,13,161,39"/>
-<area shape="rect" id="node2" href="$classsylar_1_1ConfigVar.html" title="配置参数模板子类,保存对应类型的参数值" alt="" coords="209,5,360,47"/>
-</map>

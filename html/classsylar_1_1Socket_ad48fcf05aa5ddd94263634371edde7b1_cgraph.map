@@ -1,4 +1,0 @@
-<map id="sylar::Socket::CreateTCP" name="sylar::Socket::CreateTCP">
-<area shape="rect" id="node1" title="创建TCP Socket(满足地址类型)" alt="" coords="5,5,185,32"/>
-<area shape="rect" id="node2" href="$classsylar_1_1Socket.html#ad7d10ddda988d74a39f8ea80023933c6" title="Socket构造函数" alt="" coords="233,5,389,32"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="sylar::ByteArray::writeFloat" name="sylar::ByteArray::writeFloat">
-<area shape="rect" id="node1" title="写入float类型的数据" alt="" coords="5,5,205,32"/>
-<area shape="rect" id="node2" href="$classsylar_1_1ByteArray.html#ab36f106f0c14457e89913448adce9821" title="写入固定长度uint32_t类型的数据(大端/小端)" alt="" coords="253,5,468,32"/>
-</map>

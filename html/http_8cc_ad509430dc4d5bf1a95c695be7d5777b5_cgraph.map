@@ -1,3 +1,0 @@
-<map id="sylar::http::CharsToHttpMethod" name="sylar::http::CharsToHttpMethod">
-<area shape="rect" id="node1" title="将字符串指针转换成HTTP方法枚举" alt="" coords="5,29,180,71"/>
-</map>

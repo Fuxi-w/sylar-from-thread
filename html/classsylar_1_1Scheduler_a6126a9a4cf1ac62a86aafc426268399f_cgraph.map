@@ -1,5 +1,0 @@
-<map id="sylar::Scheduler::Scheduler" name="sylar::Scheduler::Scheduler">
-<area shape="rect" id="node1" title="创建调度器" alt="" coords="5,31,204,57"/>
-<area shape="rect" id="node2" href="$classsylar_1_1Fiber.html#a02312c30aeafa6ed7e0143cfe95f21d2" title="返回当前线程正在执行的协程" alt="" coords="268,5,420,32"/>
-<area shape="rect" id="node3" href="$classsylar_1_1Scheduler.html#af49c48071c9523d1ab4bc11edf409f29" title="获取当前线程调度器指针" alt="" coords="252,56,436,83"/>
-</map>

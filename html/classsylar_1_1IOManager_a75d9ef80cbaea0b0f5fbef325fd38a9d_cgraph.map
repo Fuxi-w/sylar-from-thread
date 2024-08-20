@@ -1,4 +1,0 @@
-<map id="sylar::IOManager::delEvent" name="sylar::IOManager::delEvent">
-<area shape="rect" id="node1" title="删除事件" alt="" coords="5,13,204,39"/>
-<area shape="rect" id="node2" href="$structsylar_1_1ReadScopedLockImpl.html#ac628a0e3211dbaa1544a060702eabb00" title="释放锁" alt="" coords="252,5,453,47"/>
-</map>

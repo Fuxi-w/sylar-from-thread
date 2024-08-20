@@ -1,5 +1,0 @@
-<map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$classsylar_1_1Scheduler.html" title="协程调度器" alt="" coords="21,5,147,32"/>
-<area shape="rect" id="node2" href="$classsylar_1_1IOManager.html" title=" " alt="" coords="211,31,344,57"/>
-<area shape="rect" id="node3" href="$classsylar_1_1TimerManager.html" title="定时器管理器" alt="" coords="5,56,163,83"/>
-</map>
