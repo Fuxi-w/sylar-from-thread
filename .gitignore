@@ -1,6 +1,7 @@
 # clang vscode
 .cache/
-.vscode
+.vscode/
+.clang-format
 
 # Prerequisites
 *.d
