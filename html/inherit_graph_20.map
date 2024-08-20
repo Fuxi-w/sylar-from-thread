@@ -1,0 +1,6 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" href="$classsylar_1_1http_1_1Servlet.html" title="Servlet封装" alt="" coords="5,56,148,83"/>
+<area shape="rect" id="node2" href="$classsylar_1_1http_1_1FunctionServlet.html" title="函数式Servlet" alt="" coords="199,5,397,32"/>
+<area shape="rect" id="node3" href="$classsylar_1_1http_1_1NotFoundServlet.html" title="NotFoundServlet(默认返回404)" alt="" coords="196,56,400,83"/>
+<area shape="rect" id="node4" href="$classsylar_1_1http_1_1ServletDispatch.html" title="Servlet分发器" alt="" coords="199,107,397,133"/>
+</map>

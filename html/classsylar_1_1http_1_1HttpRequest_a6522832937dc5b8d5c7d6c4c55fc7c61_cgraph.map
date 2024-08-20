@@ -1,0 +1,6 @@
+<map id="sylar::http::HttpRequest::getCookieAs" name="sylar::http::HttpRequest::getCookieAs">
+<area shape="rect" id="node1" title="获取HTTP请求的Cookie参数" alt="" coords="5,51,183,93"/>
+<area shape="rect" id="node2" href="$http_8h.html#a80a3a1218593d2a5e4613d9900c3b387" title="获取Map中的key值,并转成对应类型" alt="" coords="253,29,386,56"/>
+<area shape="rect" id="node3" href="$classsylar_1_1http_1_1HttpRequest.html#a817303153d3154a04a92bd353f2d35cf" title="提取请求中的cookies" alt="" coords="231,81,408,122"/>
+<area shape="rect" id="node4" href="$classsylar_1_1http_1_1HttpRequest.html#a30010fd520c46200b7ecbe2f0d2349fd" title="获取HTTP请求的头部参数" alt="" coords="456,81,633,122"/>
+</map>

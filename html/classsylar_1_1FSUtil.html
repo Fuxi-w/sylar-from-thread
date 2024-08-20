@@ -1,0 +1,677 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>sylar-from-scratch: sylar::FSUtil类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">sylar-from-scratch
+   </div>
+   <div id="projectbrief">从零开始重写sylar C++高性能分布式服务器框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>sylar</b></li><li class="navelem"><a class="el" href="classsylar_1_1FSUtil.html">FSUtil</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classsylar_1_1FSUtil-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">sylar::FSUtil类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>文件系统操作类  
+ <a href="classsylar_1_1FSUtil.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="util_8h_source.html">util.h</a>&gt;</code></p>
+<div class="dynheader">
+sylar::FSUtil 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1FSUtil__coll__graph.svg" width="162" height="250"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a9cbce59b838f5bbf515043ddb343c096"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1FSUtil.html#a9cbce59b838f5bbf515043ddb343c096">ListAllFile</a> (std::vector&lt; std::string &gt; &amp;files, const std::string &amp;path, const std::string &amp;subfix)</td></tr>
+<tr class="memdesc:a9cbce59b838f5bbf515043ddb343c096"><td class="mdescLeft">&#160;</td><td class="mdescRight">递归列举指定目录下所有指定后缀的常规文件，如果不指定后缀，则遍历所有文件，返回的文件名带路径  <a href="classsylar_1_1FSUtil.html#a9cbce59b838f5bbf515043ddb343c096">更多...</a><br /></td></tr>
+<tr class="separator:a9cbce59b838f5bbf515043ddb343c096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff8e1690b306cbb5d66586c77377c683"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1FSUtil.html#aff8e1690b306cbb5d66586c77377c683">Mkdir</a> (const std::string &amp;dirname)</td></tr>
+<tr class="memdesc:aff8e1690b306cbb5d66586c77377c683"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建路径，相当于mkdir -p  <a href="classsylar_1_1FSUtil.html#aff8e1690b306cbb5d66586c77377c683">更多...</a><br /></td></tr>
+<tr class="separator:aff8e1690b306cbb5d66586c77377c683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1de52402acd1f25e009c6f467b11826"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1FSUtil.html#ad1de52402acd1f25e009c6f467b11826">IsRunningPidfile</a> (const std::string &amp;pidfile)</td></tr>
+<tr class="memdesc:ad1de52402acd1f25e009c6f467b11826"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断指定pid文件指定的pid是否正在运行，使用kill(pid, 0)的方式判断  <a href="classsylar_1_1FSUtil.html#ad1de52402acd1f25e009c6f467b11826">更多...</a><br /></td></tr>
+<tr class="separator:ad1de52402acd1f25e009c6f467b11826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c75a0dcd9a33a0a4e643df37237309b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1FSUtil.html#a2c75a0dcd9a33a0a4e643df37237309b">Rm</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:a2c75a0dcd9a33a0a4e643df37237309b"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除文件或路径  <a href="classsylar_1_1FSUtil.html#a2c75a0dcd9a33a0a4e643df37237309b">更多...</a><br /></td></tr>
+<tr class="separator:a2c75a0dcd9a33a0a4e643df37237309b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4428525255f31ab2f1ee3f5fb9c16a8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1FSUtil.html#ac4428525255f31ab2f1ee3f5fb9c16a8">Mv</a> (const std::string &amp;from, const std::string &amp;to)</td></tr>
+<tr class="memdesc:ac4428525255f31ab2f1ee3f5fb9c16a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动文件或路径，内部实现是先Rm(to)，再rename(from, to)，参考rename  <a href="classsylar_1_1FSUtil.html#ac4428525255f31ab2f1ee3f5fb9c16a8">更多...</a><br /></td></tr>
+<tr class="separator:ac4428525255f31ab2f1ee3f5fb9c16a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63a63d87803f801db051e3328351e113"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1FSUtil.html#a63a63d87803f801db051e3328351e113">Realpath</a> (const std::string &amp;path, std::string &amp;rpath)</td></tr>
+<tr class="memdesc:a63a63d87803f801db051e3328351e113"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回绝对路径，参考realpath(3)  <a href="classsylar_1_1FSUtil.html#a63a63d87803f801db051e3328351e113">更多...</a><br /></td></tr>
+<tr class="separator:a63a63d87803f801db051e3328351e113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a732e5749e23cebeb2b12a0593292b3fa"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1FSUtil.html#a732e5749e23cebeb2b12a0593292b3fa">Symlink</a> (const std::string &amp;from, const std::string &amp;to)</td></tr>
+<tr class="memdesc:a732e5749e23cebeb2b12a0593292b3fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建符号链接，参考symlink(2)  <a href="classsylar_1_1FSUtil.html#a732e5749e23cebeb2b12a0593292b3fa">更多...</a><br /></td></tr>
+<tr class="separator:a732e5749e23cebeb2b12a0593292b3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e6f68ccc238f7984e3085bd2a2f2c5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1FSUtil.html#a02e6f68ccc238f7984e3085bd2a2f2c5">Unlink</a> (const std::string &amp;filename, bool exist=false)</td></tr>
+<tr class="memdesc:a02e6f68ccc238f7984e3085bd2a2f2c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除文件，参考unlink(2)  <a href="classsylar_1_1FSUtil.html#a02e6f68ccc238f7984e3085bd2a2f2c5">更多...</a><br /></td></tr>
+<tr class="separator:a02e6f68ccc238f7984e3085bd2a2f2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa25b73f8771c2188aeb366da4ee8b76d"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1FSUtil.html#aa25b73f8771c2188aeb366da4ee8b76d">Dirname</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:aa25b73f8771c2188aeb366da4ee8b76d"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回文件，即路径中最后一个/前面的部分，不包括/本身，如果未找到，则返回filename  <a href="classsylar_1_1FSUtil.html#aa25b73f8771c2188aeb366da4ee8b76d">更多...</a><br /></td></tr>
+<tr class="separator:aa25b73f8771c2188aeb366da4ee8b76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23fa9a618ca7a0641fd1c7219c7f39a"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1FSUtil.html#ad23fa9a618ca7a0641fd1c7219c7f39a">Basename</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:ad23fa9a618ca7a0641fd1c7219c7f39a"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回文件名，即路径中最后一个/后面的部分  <a href="classsylar_1_1FSUtil.html#ad23fa9a618ca7a0641fd1c7219c7f39a">更多...</a><br /></td></tr>
+<tr class="separator:ad23fa9a618ca7a0641fd1c7219c7f39a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f08f9b5b770b6241c566a16247077c9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1FSUtil.html#a6f08f9b5b770b6241c566a16247077c9">OpenForRead</a> (std::ifstream &amp;ifs, const std::string &amp;filename, std::ios_base::openmode mode)</td></tr>
+<tr class="memdesc:a6f08f9b5b770b6241c566a16247077c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">以只读方式打开  <a href="classsylar_1_1FSUtil.html#a6f08f9b5b770b6241c566a16247077c9">更多...</a><br /></td></tr>
+<tr class="separator:a6f08f9b5b770b6241c566a16247077c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac196c780946c97e3ae159c36c713bbea"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1FSUtil.html#ac196c780946c97e3ae159c36c713bbea">OpenForWrite</a> (std::ofstream &amp;ofs, const std::string &amp;filename, std::ios_base::openmode mode)</td></tr>
+<tr class="memdesc:ac196c780946c97e3ae159c36c713bbea"><td class="mdescLeft">&#160;</td><td class="mdescRight">以只写方式打开  <a href="classsylar_1_1FSUtil.html#ac196c780946c97e3ae159c36c713bbea">更多...</a><br /></td></tr>
+<tr class="separator:ac196c780946c97e3ae159c36c713bbea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>文件系统操作类 </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="ad23fa9a618ca7a0641fd1c7219c7f39a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad23fa9a618ca7a0641fd1c7219c7f39a">&#9670;&nbsp;</a></span>Basename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string sylar::FSUtil::Basename </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回文件名，即路径中最后一个/后面的部分 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件完整路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>文件名 </dd></dl>
+
+</div>
+</div>
+<a id="aa25b73f8771c2188aeb366da4ee8b76d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa25b73f8771c2188aeb366da4ee8b76d">&#9670;&nbsp;</a></span>Dirname()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string sylar::FSUtil::Dirname </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回文件，即路径中最后一个/前面的部分，不包括/本身，如果未找到，则返回filename </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件完整路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>文件路径 </dd></dl>
+
+</div>
+</div>
+<a id="ad1de52402acd1f25e009c6f467b11826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1de52402acd1f25e009c6f467b11826">&#9670;&nbsp;</a></span>IsRunningPidfile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sylar::FSUtil::IsRunningPidfile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>pidfile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>判断指定pid文件指定的pid是否正在运行，使用kill(pid, 0)的方式判断 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pidfile</td><td>保存进程号的文件 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否正在运行 </dd></dl>
+
+</div>
+</div>
+<a id="a9cbce59b838f5bbf515043ddb343c096"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cbce59b838f5bbf515043ddb343c096">&#9670;&nbsp;</a></span>ListAllFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sylar::FSUtil::ListAllFile </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>files</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>subfix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>递归列举指定目录下所有指定后缀的常规文件，如果不指定后缀，则遍历所有文件，返回的文件名带路径 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">files</td><td>文件列表 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>路径 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subfix</td><td>后缀名，比如 ".yml" </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aff8e1690b306cbb5d66586c77377c683"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff8e1690b306cbb5d66586c77377c683">&#9670;&nbsp;</a></span>Mkdir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sylar::FSUtil::Mkdir </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>dirname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建路径，相当于mkdir -p </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dirname</td><td>路径名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>创建是否成功 </dd></dl>
+
+</div>
+</div>
+<a id="ac4428525255f31ab2f1ee3f5fb9c16a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4428525255f31ab2f1ee3f5fb9c16a8">&#9670;&nbsp;</a></span>Mv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sylar::FSUtil::Mv </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移动文件或路径，内部实现是先Rm(to)，再rename(from, to)，参考rename </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">from</td><td>源 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">to</td><td>目的地 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否成功 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1FSUtil_ac4428525255f31ab2f1ee3f5fb9c16a8_cgraph.svg" width="516" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a6f08f9b5b770b6241c566a16247077c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f08f9b5b770b6241c566a16247077c9">&#9670;&nbsp;</a></span>OpenForRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sylar::FSUtil::OpenForRead </td>
+          <td>(</td>
+          <td class="paramtype">std::ifstream &amp;&#160;</td>
+          <td class="paramname"><em>ifs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::ios_base::openmode&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>以只读方式打开 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ifs</td><td>文件流 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>打开方式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否打开成功 </dd></dl>
+
+</div>
+</div>
+<a id="ac196c780946c97e3ae159c36c713bbea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac196c780946c97e3ae159c36c713bbea">&#9670;&nbsp;</a></span>OpenForWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sylar::FSUtil::OpenForWrite </td>
+          <td>(</td>
+          <td class="paramtype">std::ofstream &amp;&#160;</td>
+          <td class="paramname"><em>ofs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::ios_base::openmode&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>以只写方式打开 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ofs</td><td>文件流 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>打开方式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否打开成功 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1FSUtil_ac196c780946c97e3ae159c36c713bbea_cgraph.svg" width="420" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a63a63d87803f801db051e3328351e113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63a63d87803f801db051e3328351e113">&#9670;&nbsp;</a></span>Realpath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sylar::FSUtil::Realpath </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>rpath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回绝对路径，参考realpath(3) </p>
+<p>路径中的符号链接会被解析成实际的路径，删除多余的'.' '..'和'/' </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rpath</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否成功 </dd></dl>
+
+</div>
+</div>
+<a id="a2c75a0dcd9a33a0a4e643df37237309b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c75a0dcd9a33a0a4e643df37237309b">&#9670;&nbsp;</a></span>Rm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sylar::FSUtil::Rm </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>删除文件或路径 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>文件名或路径名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否删除成功 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1FSUtil_a2c75a0dcd9a33a0a4e643df37237309b_cgraph.svg" width="340" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a732e5749e23cebeb2b12a0593292b3fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a732e5749e23cebeb2b12a0593292b3fa">&#9670;&nbsp;</a></span>Symlink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sylar::FSUtil::Symlink </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建符号链接，参考symlink(2) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">from</td><td>目标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">to</td><td>链接路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否成功 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1FSUtil_a732e5749e23cebeb2b12a0593292b3fa_cgraph.svg" width="550" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a02e6f68ccc238f7984e3085bd2a2f2c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02e6f68ccc238f7984e3085bd2a2f2c5">&#9670;&nbsp;</a></span>Unlink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sylar::FSUtil::Unlink </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>exist</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>删除文件，参考unlink(2) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exist</td><td>是否存在 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否成功 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>内部会判断一次是否真的不存在该文件 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>sylar/<a class="el" href="util_8h_source.html">util.h</a></li>
+<li>sylar/<a class="el" href="util_8cpp.html">util.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

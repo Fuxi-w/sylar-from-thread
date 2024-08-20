@@ -1,0 +1,3 @@
+<map id="sylar::http::StringToHttpMethod" name="sylar::http::StringToHttpMethod">
+<area shape="rect" id="node1" title="将字符串方法名转成HTTP方法枚举" alt="" coords="5,29,181,71"/>
+</map>

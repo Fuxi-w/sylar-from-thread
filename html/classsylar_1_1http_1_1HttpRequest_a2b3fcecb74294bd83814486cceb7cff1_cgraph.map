@@ -1,0 +1,5 @@
+<map id="sylar::http::HttpRequest::createResponse" name="sylar::http::HttpRequest::createResponse">
+<area shape="rect" id="node1" title="从HTTP请求构造HTTP响应" alt="" coords="5,39,183,80"/>
+<area shape="rect" id="node2" href="$classsylar_1_1http_1_1HttpRequest.html#a06cae946f7ef98446c730e5e2fa8b71f" title="返回HTTP版本" alt="" coords="231,5,408,47"/>
+<area shape="rect" id="node3" href="$classsylar_1_1http_1_1HttpRequest.html#a30ebfdd3d7d9d3ca7b06012f44ec4b68" title="是否自动关闭" alt="" coords="231,71,408,112"/>
+</map>

@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>sylar-from-scratch: sylar::Scheduler类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">sylar-from-scratch
+   </div>
+   <div id="projectbrief">从零开始重写sylar C++高性能分布式服务器框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>sylar</b></li><li class="navelem"><a class="el" href="classsylar_1_1Scheduler.html">Scheduler</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classsylar_1_1Scheduler-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">sylar::Scheduler类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>协程调度器  
+ <a href="classsylar_1_1Scheduler.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="scheduler_8h_source.html">scheduler.h</a>&gt;</code></p>
+<div class="dynheader">
+类 sylar::Scheduler 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1Scheduler__inherit__graph.svg" width="212" height="580"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+sylar::Scheduler 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1Scheduler__coll__graph.svg" width="158" height="279"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ac434e42aaa729f53e15e6c206e459186"><td class="memItemLeft" align="right" valign="top"><a id="ac434e42aaa729f53e15e6c206e459186"></a>
+typedef std::shared_ptr&lt; <a class="el" href="classsylar_1_1Scheduler.html">Scheduler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ptr</b></td></tr>
+<tr class="separator:ac434e42aaa729f53e15e6c206e459186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f9614e712ec344e039e66cc58ac9c1e"><td class="memItemLeft" align="right" valign="top"><a id="a6f9614e712ec344e039e66cc58ac9c1e"></a>
+typedef <a class="el" href="classsylar_1_1Mutex.html">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MutexType</b></td></tr>
+<tr class="separator:a6f9614e712ec344e039e66cc58ac9c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a6126a9a4cf1ac62a86aafc426268399f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Scheduler.html#a6126a9a4cf1ac62a86aafc426268399f">Scheduler</a> (size_t threads=1, bool use_caller=true, const std::string &amp;name=&quot;Scheduler&quot;)</td></tr>
+<tr class="memdesc:a6126a9a4cf1ac62a86aafc426268399f"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建调度器  <a href="classsylar_1_1Scheduler.html#a6126a9a4cf1ac62a86aafc426268399f">更多...</a><br /></td></tr>
+<tr class="separator:a6126a9a4cf1ac62a86aafc426268399f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581bc46880ca5f5e209db0e38a8b2814"><td class="memItemLeft" align="right" valign="top"><a id="a581bc46880ca5f5e209db0e38a8b2814"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Scheduler.html#a581bc46880ca5f5e209db0e38a8b2814">~Scheduler</a> ()</td></tr>
+<tr class="memdesc:a581bc46880ca5f5e209db0e38a8b2814"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数 <br /></td></tr>
+<tr class="separator:a581bc46880ca5f5e209db0e38a8b2814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d153fbd07ba72cfb57e8534f97a53d3"><td class="memItemLeft" align="right" valign="top"><a id="a9d153fbd07ba72cfb57e8534f97a53d3"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Scheduler.html#a9d153fbd07ba72cfb57e8534f97a53d3">getName</a> () const</td></tr>
+<tr class="memdesc:a9d153fbd07ba72cfb57e8534f97a53d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取调度器名称 <br /></td></tr>
+<tr class="separator:a9d153fbd07ba72cfb57e8534f97a53d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd54348eec0012357cb2b83a0010a534"><td class="memTemplParams" colspan="2">template&lt;class FiberOrCb &gt; </td></tr>
+<tr class="memitem:acd54348eec0012357cb2b83a0010a534"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsylar_1_1Scheduler.html#acd54348eec0012357cb2b83a0010a534">schedule</a> (FiberOrCb fc, int thread=-1)</td></tr>
+<tr class="memdesc:acd54348eec0012357cb2b83a0010a534"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加调度任务  <a href="classsylar_1_1Scheduler.html#acd54348eec0012357cb2b83a0010a534">更多...</a><br /></td></tr>
+<tr class="separator:acd54348eec0012357cb2b83a0010a534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a028c935d19b263bd0c49c5f65201e8b5"><td class="memItemLeft" align="right" valign="top"><a id="a028c935d19b263bd0c49c5f65201e8b5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Scheduler.html#a028c935d19b263bd0c49c5f65201e8b5">start</a> ()</td></tr>
+<tr class="memdesc:a028c935d19b263bd0c49c5f65201e8b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">启动调度器 <br /></td></tr>
+<tr class="separator:a028c935d19b263bd0c49c5f65201e8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f195d4d6862200f7a979200692d3ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Scheduler.html#aa1f195d4d6862200f7a979200692d3ef">stop</a> ()</td></tr>
+<tr class="memdesc:aa1f195d4d6862200f7a979200692d3ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止调度器，等所有调度任务都执行完了再返回  <a href="classsylar_1_1Scheduler.html#aa1f195d4d6862200f7a979200692d3ef">更多...</a><br /></td></tr>
+<tr class="separator:aa1f195d4d6862200f7a979200692d3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:af49c48071c9523d1ab4bc11edf409f29"><td class="memItemLeft" align="right" valign="top"><a id="af49c48071c9523d1ab4bc11edf409f29"></a>
+static <a class="el" href="classsylar_1_1Scheduler.html">Scheduler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Scheduler.html#af49c48071c9523d1ab4bc11edf409f29">GetThis</a> ()</td></tr>
+<tr class="memdesc:af49c48071c9523d1ab4bc11edf409f29"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前线程调度器指针 <br /></td></tr>
+<tr class="separator:af49c48071c9523d1ab4bc11edf409f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b802736f5c20b477def0838b92804cf"><td class="memItemLeft" align="right" valign="top"><a id="a8b802736f5c20b477def0838b92804cf"></a>
+static <a class="el" href="classsylar_1_1Fiber.html">Fiber</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Scheduler.html#a8b802736f5c20b477def0838b92804cf">GetMainFiber</a> ()</td></tr>
+<tr class="memdesc:a8b802736f5c20b477def0838b92804cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前线程的主协程 <br /></td></tr>
+<tr class="separator:a8b802736f5c20b477def0838b92804cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a142d8cd454d6a8471278506c335302ae"><td class="memItemLeft" align="right" valign="top"><a id="a142d8cd454d6a8471278506c335302ae"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Scheduler.html#a142d8cd454d6a8471278506c335302ae">tickle</a> ()</td></tr>
+<tr class="memdesc:a142d8cd454d6a8471278506c335302ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">通知协程调度器有任务了 <br /></td></tr>
+<tr class="separator:a142d8cd454d6a8471278506c335302ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac87e22634869414e4b493685cbbf82e2"><td class="memItemLeft" align="right" valign="top"><a id="ac87e22634869414e4b493685cbbf82e2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Scheduler.html#ac87e22634869414e4b493685cbbf82e2">run</a> ()</td></tr>
+<tr class="memdesc:ac87e22634869414e4b493685cbbf82e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">协程调度函数 <br /></td></tr>
+<tr class="separator:ac87e22634869414e4b493685cbbf82e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669db8fa5f3ca3d0595c9858b903fc71"><td class="memItemLeft" align="right" valign="top"><a id="a669db8fa5f3ca3d0595c9858b903fc71"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Scheduler.html#a669db8fa5f3ca3d0595c9858b903fc71">idle</a> ()</td></tr>
+<tr class="memdesc:a669db8fa5f3ca3d0595c9858b903fc71"><td class="mdescLeft">&#160;</td><td class="mdescRight">无任务调度时执行idle协程 <br /></td></tr>
+<tr class="separator:a669db8fa5f3ca3d0595c9858b903fc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae61cba3e8e7320d441c295b6183bba55"><td class="memItemLeft" align="right" valign="top"><a id="ae61cba3e8e7320d441c295b6183bba55"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Scheduler.html#ae61cba3e8e7320d441c295b6183bba55">stopping</a> ()</td></tr>
+<tr class="memdesc:ae61cba3e8e7320d441c295b6183bba55"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回是否可以停止 <br /></td></tr>
+<tr class="separator:ae61cba3e8e7320d441c295b6183bba55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab919e867c6b4dac93a6f810551e9def"><td class="memItemLeft" align="right" valign="top"><a id="aab919e867c6b4dac93a6f810551e9def"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Scheduler.html#aab919e867c6b4dac93a6f810551e9def">setThis</a> ()</td></tr>
+<tr class="memdesc:aab919e867c6b4dac93a6f810551e9def"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前的协程调度器 <br /></td></tr>
+<tr class="separator:aab919e867c6b4dac93a6f810551e9def"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c9dae03a23adeffe04ca2cf6e4f8fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Scheduler.html#ac4c9dae03a23adeffe04ca2cf6e4f8fd">hasIdleThreads</a> ()</td></tr>
+<tr class="memdesc:ac4c9dae03a23adeffe04ca2cf6e4f8fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回是否有空闲线程  <a href="classsylar_1_1Scheduler.html#ac4c9dae03a23adeffe04ca2cf6e4f8fd">更多...</a><br /></td></tr>
+<tr class="separator:ac4c9dae03a23adeffe04ca2cf6e4f8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>协程调度器 </p>
+<p>封装的是N-M的协程调度器 内部有一个线程池,支持协程在线程池里面切换 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a6126a9a4cf1ac62a86aafc426268399f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6126a9a4cf1ac62a86aafc426268399f">&#9670;&nbsp;</a></span>Scheduler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sylar::Scheduler::Scheduler </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>threads</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_caller</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;Scheduler&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建调度器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">threads</td><td>线程数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">use_caller</td><td>是否将当前线程也作为调度线程 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>caller线程的主协程不会被线程的调度协程run进行调度，而且，线程的调度协程停止时，应该返回caller线程的主协程 在user caller情况下，把caller线程的主协程暂时保存起来，等调度协程结束时，再resume caller协程</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1Scheduler_a6126a9a4cf1ac62a86aafc426268399f_cgraph.svg" width="442" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ac4c9dae03a23adeffe04ca2cf6e4f8fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4c9dae03a23adeffe04ca2cf6e4f8fd">&#9670;&nbsp;</a></span>hasIdleThreads()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sylar::Scheduler::hasIdleThreads </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>返回是否有空闲线程 </p>
+<p>当调度协程进入idle时空闲线程数加1，从idle协程返回时空闲线程数减1 </p>
+
+</div>
+</div>
+<a id="acd54348eec0012357cb2b83a0010a534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd54348eec0012357cb2b83a0010a534">&#9670;&nbsp;</a></span>schedule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class FiberOrCb &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sylar::Scheduler::schedule </td>
+          <td>(</td>
+          <td class="paramtype">FiberOrCb&#160;</td>
+          <td class="paramname"><em>fc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>thread</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加调度任务 </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">FiberOrCb</td><td>调度任务类型，可以是协程对象或函数指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">[]</td><td>fc 协程对象或指针 </td></tr>
+    <tr><td class="paramname">[]</td><td>thread 指定运行该任务的线程号，-1表示任意线程 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1Scheduler_acd54348eec0012357cb2b83a0010a534_cgraph.svg" width="422" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa1f195d4d6862200f7a979200692d3ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1f195d4d6862200f7a979200692d3ef">&#9670;&nbsp;</a></span>stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sylar::Scheduler::stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>停止调度器，等所有调度任务都执行完了再返回 </p>
+<p>如果use caller，那只能由caller线程发起stop</p>
+<p>在use caller情况下，调度器协程结束时，应该返回caller协程</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>sylar/<a class="el" href="scheduler_8h_source.html">scheduler.h</a></li>
+<li>sylar/<a class="el" href="scheduler_8cc.html">scheduler.cc</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

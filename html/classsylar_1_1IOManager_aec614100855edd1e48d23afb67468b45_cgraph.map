@@ -1,0 +1,4 @@
+<map id="sylar::IOManager::stopping" name="sylar::IOManager::stopping">
+<area shape="rect" id="node1" title="判断是否可以停止" alt="" coords="5,5,203,32"/>
+<area shape="rect" id="node2" href="$classsylar_1_1Scheduler.html#ae61cba3e8e7320d441c295b6183bba55" title="返回是否可以停止" alt="" coords="251,5,441,32"/>
+</map>

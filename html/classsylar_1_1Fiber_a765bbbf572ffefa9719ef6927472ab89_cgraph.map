@@ -1,0 +1,5 @@
+<map id="sylar::Fiber::reset" name="sylar::Fiber::reset">
+<area shape="rect" id="node1" title="重置协程状态和入口函数，复用栈空间，不重新创建栈" alt="" coords="5,5,140,32"/>
+<area shape="rect" id="node2" href="$classsylar_1_1Fiber.html#a8cb4bce15e48068c01034f2442050256" title="协程入口函数" alt="" coords="188,5,352,32"/>
+<area shape="rect" id="node3" href="$classsylar_1_1Fiber.html#a02312c30aeafa6ed7e0143cfe95f21d2" title="返回当前线程正在执行的协程" alt="" coords="400,5,552,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="sylar::NullMutex" name="sylar::NullMutex">
+<area shape="rect" id="node1" title="空锁(用于调试)" alt="" coords="14,175,143,296"/>
+<area shape="rect" id="node2" href="$classsylar_1_1Noncopyable.html" title="对象无法拷贝,赋值" alt="" coords="5,5,152,127"/>
+</map>

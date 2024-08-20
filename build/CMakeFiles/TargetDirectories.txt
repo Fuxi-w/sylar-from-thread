@@ -1,0 +1,8 @@
+/root/workspace/sylar-from-thread/build/CMakeFiles/sylar.dir
+/root/workspace/sylar-from-thread/build/CMakeFiles/test_log.dir
+/root/workspace/sylar-from-thread/build/CMakeFiles/test_util.dir
+/root/workspace/sylar-from-thread/build/CMakeFiles/test_env.dir
+/root/workspace/sylar-from-thread/build/CMakeFiles/test_config.dir
+/root/workspace/sylar-from-thread/build/CMakeFiles/test_thread.dir
+/root/workspace/sylar-from-thread/build/CMakeFiles/edit_cache.dir
+/root/workspace/sylar-from-thread/build/CMakeFiles/rebuild_cache.dir

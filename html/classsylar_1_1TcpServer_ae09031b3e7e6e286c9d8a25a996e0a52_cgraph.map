@@ -1,0 +1,7 @@
+<map id="sylar::TcpServer::start" name="sylar::TcpServer::start">
+<area shape="rect" id="node1" title="启动服务" alt="" coords="5,31,168,57"/>
+<area shape="rect" id="node2" href="$classsylar_1_1Scheduler.html#acd54348eec0012357cb2b83a0010a534" title="添加调度任务" alt="" coords="471,5,663,32"/>
+<area shape="rect" id="node4" href="$classsylar_1_1TcpServer.html#a277af935368549fce8bc175ef1cacffe" title="开始接受连接" alt="" coords="216,56,423,83"/>
+<area shape="rect" id="node3" href="$classsylar_1_1Scheduler.html#a142d8cd454d6a8471278506c335302ae" title="通知协程调度器有任务了" alt="" coords="711,5,881,32"/>
+<area shape="rect" id="node5" href="$classsylar_1_1TcpServer.html#aa1ef769ce19241eb8892748355612973" title="处理新连接的Socket类" alt="" coords="478,57,655,98"/>
+</map>

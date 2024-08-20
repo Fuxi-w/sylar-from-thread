@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>sylar-from-scratch: sylar/env.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">sylar-from-scratch
+   </div>
+   <div id="projectbrief">从零开始重写sylar C++高性能分布式服务器框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_85140288eee94f6c1dbd59c496fa876b.html">sylar</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">env.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="env_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __SYLAR_ENV_H__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __SYLAR_ENV_H__</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="singleton_8h.html">singleton.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mutex_8h.html">mutex.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>sylar {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classsylar_1_1Env.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classsylar_1_1Env.html">Env</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classsylar_1_1RWMutex.html">RWMutex</a> <a class="code" href="classsylar_1_1RWMutex.html">RWMutexType</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classsylar_1_1Env.html#ae84e486268e4fc7acc6c4312dcbcf7fa">init</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classsylar_1_1Env.html#a96196f29d551abefbd9c3f663bf3b1e6">add</a>(<span class="keyword">const</span> std::string &amp;key, <span class="keyword">const</span> std::string &amp;val);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classsylar_1_1Env.html#a2ca4241f426dcb79adfc40a891fbd2c8">has</a>(<span class="keyword">const</span> std::string &amp;key);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classsylar_1_1Env.html#aaa41d2aaf4ee8e994ffad122180b9e58">del</a>(<span class="keyword">const</span> std::string &amp;key);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::string <a class="code" href="classsylar_1_1Env.html#a80e94aa5618be62ec8d77ee7d997b51f">get</a>(<span class="keyword">const</span> std::string &amp;key, <span class="keyword">const</span> std::string &amp;default_value = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classsylar_1_1Env.html#af7d08aa5e5c8e1419d75040974eb9d95">addHelp</a>(<span class="keyword">const</span> std::string &amp;key, <span class="keyword">const</span> std::string &amp;desc);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classsylar_1_1Env.html#a1c67fe8fc40f4103bae88570a313f872">removeHelp</a>(<span class="keyword">const</span> std::string &amp;key);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classsylar_1_1Env.html#aaf3efb80705b51ffafe80e349cdc3790">printHelp</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classsylar_1_1Env.html#a5adc9ff34d9d60726382fab8a1ad4a6f">   72</a></span>&#160;    <span class="keyword">const</span> std::string &amp;<a class="code" href="classsylar_1_1Env.html#a5adc9ff34d9d60726382fab8a1ad4a6f">getExe</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_exe; }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classsylar_1_1Env.html#a3e887d57015680148e703049341baec1">   78</a></span>&#160;    <span class="keyword">const</span> std::string &amp;<a class="code" href="classsylar_1_1Env.html#a3e887d57015680148e703049341baec1">getCwd</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_cwd; }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classsylar_1_1Env.html#ad62b3f517f5ec376b4b1992c25fa440e">setEnv</a>(<span class="keyword">const</span> std::string &amp;key, <span class="keyword">const</span> std::string &amp;val);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::string <a class="code" href="classsylar_1_1Env.html#a92d1bdd336ce1e1103437c238c37d28c">getEnv</a>(<span class="keyword">const</span> std::string &amp;key, <span class="keyword">const</span> std::string &amp;default_value = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    std::string <a class="code" href="classsylar_1_1Env.html#a7769968b966a7accce2096508e74d2bb">getAbsolutePath</a>(<span class="keyword">const</span> std::string &amp;path) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    std::string <a class="code" href="classsylar_1_1Env.html#a1e91b4dfaeaa789a599d78fd1ee80293">getAbsoluteWorkPath</a>(<span class="keyword">const</span> std::string&amp; path) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    std::string <a class="code" href="classsylar_1_1Env.html#a14be86ed6c13577d283e12ca3ba2e7bb">getConfigPath</a>();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    RWMutexType m_mutex;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::map&lt;std::string, std::string&gt; m_args;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    std::vector&lt;std::pair&lt;std::string, std::string&gt;&gt; m_helps;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    std::string m_program;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    std::string m_exe;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::string m_cwd;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="env_8h.html#a8e7b081cbd67dc0881a5d2a3b37ab6bf">  125</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="classsylar_1_1Singleton.html">sylar::Singleton&lt;Env&gt;</a> <a class="code" href="classsylar_1_1Singleton.html">EnvMgr</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;} <span class="comment">// namespace sylar</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclasssylar_1_1Env_html"><div class="ttname"><a href="classsylar_1_1Env.html">sylar::Env</a></div><div class="ttdef"><b>Definition:</b> env.h:18</div></div>
+<div class="ttc" id="aclasssylar_1_1Env_html_a14be86ed6c13577d283e12ca3ba2e7bb"><div class="ttname"><a href="classsylar_1_1Env.html#a14be86ed6c13577d283e12ca3ba2e7bb">sylar::Env::getConfigPath</a></div><div class="ttdeci">std::string getConfigPath()</div><div class="ttdoc">获取配置文件路径，配置文件路径通过命令行-c选项指定，默认为当前目录下的conf文件夹</div><div class="ttdef"><b>Definition:</b> env.cc:146</div></div>
+<div class="ttc" id="aclasssylar_1_1Env_html_a1c67fe8fc40f4103bae88570a313f872"><div class="ttname"><a href="classsylar_1_1Env.html#a1c67fe8fc40f4103bae88570a313f872">sylar::Env::removeHelp</a></div><div class="ttdeci">void removeHelp(const std::string &amp;key)</div><div class="ttdoc">删除命令行帮助选项</div><div class="ttdef"><b>Definition:</b> env.cc:92</div></div>
+<div class="ttc" id="aclasssylar_1_1Env_html_a1e91b4dfaeaa789a599d78fd1ee80293"><div class="ttname"><a href="classsylar_1_1Env.html#a1e91b4dfaeaa789a599d78fd1ee80293">sylar::Env::getAbsoluteWorkPath</a></div><div class="ttdeci">std::string getAbsoluteWorkPath(const std::string &amp;path) const</div><div class="ttdoc">获取工作路径下path的绝对路径</div><div class="ttdef"><b>Definition:</b> env.cc:134</div></div>
+<div class="ttc" id="aclasssylar_1_1Env_html_a2ca4241f426dcb79adfc40a891fbd2c8"><div class="ttname"><a href="classsylar_1_1Env.html#a2ca4241f426dcb79adfc40a891fbd2c8">sylar::Env::has</a></div><div class="ttdeci">bool has(const std::string &amp;key)</div><div class="ttdoc">获取是否存在键值为key的自定义环境变量</div><div class="ttdef"><b>Definition:</b> env.cc:69</div></div>
+<div class="ttc" id="aclasssylar_1_1Env_html_a3e887d57015680148e703049341baec1"><div class="ttname"><a href="classsylar_1_1Env.html#a3e887d57015680148e703049341baec1">sylar::Env::getCwd</a></div><div class="ttdeci">const std::string &amp; getCwd() const</div><div class="ttdoc">获取当前路径，从main函数的argv[0]中获取，以/结尾</div><div class="ttdef"><b>Definition:</b> env.h:78</div></div>
+<div class="ttc" id="aclasssylar_1_1Env_html_a5adc9ff34d9d60726382fab8a1ad4a6f"><div class="ttname"><a href="classsylar_1_1Env.html#a5adc9ff34d9d60726382fab8a1ad4a6f">sylar::Env::getExe</a></div><div class="ttdeci">const std::string &amp; getExe() const</div><div class="ttdoc">获取exe完整路径，从/proc/$pid/exe的软链接路径中获取，参考readlink(2)</div><div class="ttdef"><b>Definition:</b> env.h:72</div></div>
+<div class="ttc" id="aclasssylar_1_1Env_html_a7769968b966a7accce2096508e74d2bb"><div class="ttname"><a href="classsylar_1_1Env.html#a7769968b966a7accce2096508e74d2bb">sylar::Env::getAbsolutePath</a></div><div class="ttdeci">std::string getAbsolutePath(const std::string &amp;path) const</div><div class="ttdoc">提供一个相对当前的路径path，返回这个path的绝对路径</div><div class="ttdef"><b>Definition:</b> env.cc:124</div></div>
+<div class="ttc" id="aclasssylar_1_1Env_html_a80e94aa5618be62ec8d77ee7d997b51f"><div class="ttname"><a href="classsylar_1_1Env.html#a80e94aa5618be62ec8d77ee7d997b51f">sylar::Env::get</a></div><div class="ttdeci">std::string get(const std::string &amp;key, const std::string &amp;default_value=&quot;&quot;)</div><div class="ttdoc">获键值为key的自定义环境变量，如果未找到，则返回提供的默认值</div><div class="ttdef"><b>Definition:</b> env.cc:80</div></div>
+<div class="ttc" id="aclasssylar_1_1Env_html_a92d1bdd336ce1e1103437c238c37d28c"><div class="ttname"><a href="classsylar_1_1Env.html#a92d1bdd336ce1e1103437c238c37d28c">sylar::Env::getEnv</a></div><div class="ttdeci">std::string getEnv(const std::string &amp;key, const std::string &amp;default_value=&quot;&quot;)</div><div class="ttdoc">获取系统环境变量，参考getenv(3)</div><div class="ttdef"><b>Definition:</b> env.cc:116</div></div>
+<div class="ttc" id="aclasssylar_1_1Env_html_a96196f29d551abefbd9c3f663bf3b1e6"><div class="ttname"><a href="classsylar_1_1Env.html#a96196f29d551abefbd9c3f663bf3b1e6">sylar::Env::add</a></div><div class="ttdeci">void add(const std::string &amp;key, const std::string &amp;val)</div><div class="ttdoc">添加自定义环境变量，存储在程序内部的map结构中</div><div class="ttdef"><b>Definition:</b> env.cc:64</div></div>
+<div class="ttc" id="aclasssylar_1_1Env_html_aaa41d2aaf4ee8e994ffad122180b9e58"><div class="ttname"><a href="classsylar_1_1Env.html#aaa41d2aaf4ee8e994ffad122180b9e58">sylar::Env::del</a></div><div class="ttdeci">void del(const std::string &amp;key)</div><div class="ttdoc">删除键值为key的自定义环境变量</div><div class="ttdef"><b>Definition:</b> env.cc:75</div></div>
+<div class="ttc" id="aclasssylar_1_1Env_html_aaf3efb80705b51ffafe80e349cdc3790"><div class="ttname"><a href="classsylar_1_1Env.html#aaf3efb80705b51ffafe80e349cdc3790">sylar::Env::printHelp</a></div><div class="ttdeci">void printHelp()</div><div class="ttdoc">打印帮助信息</div><div class="ttdef"><b>Definition:</b> env.cc:104</div></div>
+<div class="ttc" id="aclasssylar_1_1Env_html_ad62b3f517f5ec376b4b1992c25fa440e"><div class="ttname"><a href="classsylar_1_1Env.html#ad62b3f517f5ec376b4b1992c25fa440e">sylar::Env::setEnv</a></div><div class="ttdeci">bool setEnv(const std::string &amp;key, const std::string &amp;val)</div><div class="ttdoc">设置系统环境变量，参考setenv(3)</div><div class="ttdef"><b>Definition:</b> env.cc:112</div></div>
+<div class="ttc" id="aclasssylar_1_1Env_html_ae84e486268e4fc7acc6c4312dcbcf7fa"><div class="ttname"><a href="classsylar_1_1Env.html#ae84e486268e4fc7acc6c4312dcbcf7fa">sylar::Env::init</a></div><div class="ttdeci">bool init(int argc, char **argv)</div><div class="ttdoc">初始化，包括记录程序名称与路径，解析命令行选项和参数</div><div class="ttdef"><b>Definition:</b> env.cc:21</div></div>
+<div class="ttc" id="aclasssylar_1_1Env_html_af7d08aa5e5c8e1419d75040974eb9d95"><div class="ttname"><a href="classsylar_1_1Env.html#af7d08aa5e5c8e1419d75040974eb9d95">sylar::Env::addHelp</a></div><div class="ttdeci">void addHelp(const std::string &amp;key, const std::string &amp;desc)</div><div class="ttdoc">增加命令行帮助选项</div><div class="ttdef"><b>Definition:</b> env.cc:86</div></div>
+<div class="ttc" id="aclasssylar_1_1RWMutex_html"><div class="ttname"><a href="classsylar_1_1RWMutex.html">sylar::RWMutex</a></div><div class="ttdoc">读写互斥量</div><div class="ttdef"><b>Definition:</b> mutex.h:272</div></div>
+<div class="ttc" id="aclasssylar_1_1Singleton_html"><div class="ttname"><a href="classsylar_1_1Singleton.html">sylar::Singleton</a></div><div class="ttdoc">单例模式封装类</div><div class="ttdef"><b>Definition:</b> singleton.h:40</div></div>
+<div class="ttc" id="amutex_8h_html"><div class="ttname"><a href="mutex_8h.html">mutex.h</a></div><div class="ttdoc">信号量，互斥锁，读写锁，范围锁模板，自旋锁，原子锁</div></div>
+<div class="ttc" id="asingleton_8h_html"><div class="ttname"><a href="singleton_8h.html">singleton.h</a></div><div class="ttdoc">单例模式封装</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

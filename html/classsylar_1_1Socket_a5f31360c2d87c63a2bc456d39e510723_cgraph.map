@@ -1,0 +1,5 @@
+<map id="sylar::Socket::bind" name="sylar::Socket::bind">
+<area shape="rect" id="node1" title="绑定地址" alt="" coords="5,31,147,57"/>
+<area shape="rect" id="node2" href="$classsylar_1_1Socket.html#a86d7b7034c6ee0462dbe6af951c078e6" title="是否有效(m_sock != &#45;1)" alt="" coords="202,5,358,32"/>
+<area shape="rect" id="node3" href="$classsylar_1_1Socket.html#a77c251c1e5bb0eceaad8493b90a04b6a" title="创建socket" alt="" coords="195,56,365,83"/>
+</map>

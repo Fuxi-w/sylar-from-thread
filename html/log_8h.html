@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>sylar-from-scratch: sylar/log.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">sylar-from-scratch
+   </div>
+   <div id="projectbrief">从零开始重写sylar C++高性能分布式服务器框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_85140288eee94f6c1dbd59c496fa876b.html">sylar</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a>  </div>
+  <div class="headertitle">
+<div class="title">log.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>日志模块  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;cstdarg&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mutex_8h_source.html">mutex.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="singleton_8h_source.html">singleton.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+log.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="log_8h__incl.svg" width="1532" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="log_8h__dep__incl.svg" width="3199" height="664"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div>
+<p><a href="log_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogLevel.html">sylar::LogLevel</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志级别  <a href="classsylar_1_1LogLevel.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogEvent.html">sylar::LogEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志事件  <a href="classsylar_1_1LogEvent.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogFormatter.html">sylar::LogFormatter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志格式化  <a href="classsylar_1_1LogFormatter.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogFormatter_1_1FormatItem.html">sylar::LogFormatter::FormatItem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志内容格式化项，虚基类，用于派生出不同的格式化项  <a href="classsylar_1_1LogFormatter_1_1FormatItem.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogAppender.html">sylar::LogAppender</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志输出地，虚基类，用于派生出不同的LogAppender  <a href="classsylar_1_1LogAppender.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1StdoutLogAppender.html">sylar::StdoutLogAppender</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出到控制台的Appender  <a href="classsylar_1_1StdoutLogAppender.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1FileLogAppender.html">sylar::FileLogAppender</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出到文件  <a href="classsylar_1_1FileLogAppender.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Logger.html">sylar::Logger</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志器类  <a href="classsylar_1_1Logger.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogEventWrap.html">sylar::LogEventWrap</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志事件包装器，方便宏定义，内部包含日志事件和日志器  <a href="classsylar_1_1LogEventWrap.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LoggerManager.html">sylar::LoggerManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志器管理类  <a href="classsylar_1_1LoggerManager.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:af752fd33828eb554b0281ed98544fe79"><td class="memItemLeft" align="right" valign="top"><a id="af752fd33828eb554b0281ed98544fe79"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#af752fd33828eb554b0281ed98544fe79">SYLAR_LOG_ROOT</a>()&#160;&#160;&#160;<a class="el" href="classsylar_1_1Singleton.html#ac3dabaafd3c129571739a13f7b0ee602">sylar::LoggerMgr::GetInstance</a>()-&gt;getRoot()</td></tr>
+<tr class="memdesc:af752fd33828eb554b0281ed98544fe79"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取root日志器 <br /></td></tr>
+<tr class="separator:af752fd33828eb554b0281ed98544fe79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e080e5eff9c67a3825e59c7d2877f78"><td class="memItemLeft" align="right" valign="top"><a id="a1e080e5eff9c67a3825e59c7d2877f78"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a1e080e5eff9c67a3825e59c7d2877f78">SYLAR_LOG_NAME</a>(name)&#160;&#160;&#160;<a class="el" href="classsylar_1_1Singleton.html#ac3dabaafd3c129571739a13f7b0ee602">sylar::LoggerMgr::GetInstance</a>()-&gt;getLogger(name)</td></tr>
+<tr class="memdesc:a1e080e5eff9c67a3825e59c7d2877f78"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取指定名称的日志器 <br /></td></tr>
+<tr class="separator:a1e080e5eff9c67a3825e59c7d2877f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a797348bb17a64785dd5e4f1282c66028"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a797348bb17a64785dd5e4f1282c66028">SYLAR_LOG_LEVEL</a>(logger,  level)</td></tr>
+<tr class="memdesc:a797348bb17a64785dd5e4f1282c66028"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用流式方式将日志级别level的日志写入到logger  <a href="log_8h.html#a797348bb17a64785dd5e4f1282c66028">更多...</a><br /></td></tr>
+<tr class="separator:a797348bb17a64785dd5e4f1282c66028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b99b0ae5658564cba6ea78b9c44070d"><td class="memItemLeft" align="right" valign="top"><a id="a1b99b0ae5658564cba6ea78b9c44070d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYLAR_LOG_FATAL</b>(logger)&#160;&#160;&#160;<a class="el" href="log_8h.html#a797348bb17a64785dd5e4f1282c66028">SYLAR_LOG_LEVEL</a>(logger, <a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271ba09c3b978d8f374a13e28ff351e00949e">sylar::LogLevel::FATAL</a>)</td></tr>
+<tr class="separator:a1b99b0ae5658564cba6ea78b9c44070d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2958e49c82ff46f12798968000e33d73"><td class="memItemLeft" align="right" valign="top"><a id="a2958e49c82ff46f12798968000e33d73"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYLAR_LOG_ALERT</b>(logger)&#160;&#160;&#160;<a class="el" href="log_8h.html#a797348bb17a64785dd5e4f1282c66028">SYLAR_LOG_LEVEL</a>(logger, <a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271bafc5ecd11fa48ee949ca768f428dfaa81">sylar::LogLevel::ALERT</a>)</td></tr>
+<tr class="separator:a2958e49c82ff46f12798968000e33d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac844e7385abe08ef0cca637c8f32fe5d"><td class="memItemLeft" align="right" valign="top"><a id="ac844e7385abe08ef0cca637c8f32fe5d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYLAR_LOG_CRIT</b>(logger)&#160;&#160;&#160;<a class="el" href="log_8h.html#a797348bb17a64785dd5e4f1282c66028">SYLAR_LOG_LEVEL</a>(logger, <a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271ba6659b3e3f4080d6e6226312c3ba854bc">sylar::LogLevel::CRIT</a>)</td></tr>
+<tr class="separator:ac844e7385abe08ef0cca637c8f32fe5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dfd5249e7f9c2854da1369fb355364f"><td class="memItemLeft" align="right" valign="top"><a id="a9dfd5249e7f9c2854da1369fb355364f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYLAR_LOG_ERROR</b>(logger)&#160;&#160;&#160;<a class="el" href="log_8h.html#a797348bb17a64785dd5e4f1282c66028">SYLAR_LOG_LEVEL</a>(logger, <a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271bafe503f7b664202f76e0e86e462f8e4f2">sylar::LogLevel::ERROR</a>)</td></tr>
+<tr class="separator:a9dfd5249e7f9c2854da1369fb355364f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98ff65f84925c147be96dd911df2fb5e"><td class="memItemLeft" align="right" valign="top"><a id="a98ff65f84925c147be96dd911df2fb5e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYLAR_LOG_WARN</b>(logger)&#160;&#160;&#160;<a class="el" href="log_8h.html#a797348bb17a64785dd5e4f1282c66028">SYLAR_LOG_LEVEL</a>(logger, <a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271bad21caa6f8ec6a8cd43a97466d1f8a950">sylar::LogLevel::WARN</a>)</td></tr>
+<tr class="separator:a98ff65f84925c147be96dd911df2fb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aa4da08f3e54624e3fddb23d1545e63"><td class="memItemLeft" align="right" valign="top"><a id="a6aa4da08f3e54624e3fddb23d1545e63"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYLAR_LOG_NOTICE</b>(logger)&#160;&#160;&#160;<a class="el" href="log_8h.html#a797348bb17a64785dd5e4f1282c66028">SYLAR_LOG_LEVEL</a>(logger, <a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271ba90c201569d1005ac46660521ff072ff0">sylar::LogLevel::NOTICE</a>)</td></tr>
+<tr class="separator:a6aa4da08f3e54624e3fddb23d1545e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cfea58ee3be21deb892e4a806fc4e0f"><td class="memItemLeft" align="right" valign="top"><a id="a0cfea58ee3be21deb892e4a806fc4e0f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYLAR_LOG_INFO</b>(logger)&#160;&#160;&#160;<a class="el" href="log_8h.html#a797348bb17a64785dd5e4f1282c66028">SYLAR_LOG_LEVEL</a>(logger, <a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271ba9e836b2483673ae6fbe3feef491ea99c">sylar::LogLevel::INFO</a>)</td></tr>
+<tr class="separator:a0cfea58ee3be21deb892e4a806fc4e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2beb50689fe10891219ff841fecad904"><td class="memItemLeft" align="right" valign="top"><a id="a2beb50689fe10891219ff841fecad904"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYLAR_LOG_DEBUG</b>(logger)&#160;&#160;&#160;<a class="el" href="log_8h.html#a797348bb17a64785dd5e4f1282c66028">SYLAR_LOG_LEVEL</a>(logger, <a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271bae2625cd4626664fa9b0fdf6b938768e7">sylar::LogLevel::DEBUG</a>)</td></tr>
+<tr class="separator:a2beb50689fe10891219ff841fecad904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae918d318a5b900d950f3451925abb536"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#ae918d318a5b900d950f3451925abb536">SYLAR_LOG_FMT_LEVEL</a>(logger,  level,  fmt, ...)</td></tr>
+<tr class="memdesc:ae918d318a5b900d950f3451925abb536"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用C printf方式将日志级别level的日志写入到logger  <a href="log_8h.html#ae918d318a5b900d950f3451925abb536">更多...</a><br /></td></tr>
+<tr class="separator:ae918d318a5b900d950f3451925abb536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c701038139125c87edc8e113e92565"><td class="memItemLeft" align="right" valign="top"><a id="af4c701038139125c87edc8e113e92565"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYLAR_LOG_FMT_FATAL</b>(logger,  fmt, ...)&#160;&#160;&#160;<a class="el" href="log_8h.html#ae918d318a5b900d950f3451925abb536">SYLAR_LOG_FMT_LEVEL</a>(logger, <a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271ba09c3b978d8f374a13e28ff351e00949e">sylar::LogLevel::FATAL</a>, fmt, __VA_ARGS__)</td></tr>
+<tr class="separator:af4c701038139125c87edc8e113e92565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e885415d65a23f1afeacdef6e39e844"><td class="memItemLeft" align="right" valign="top"><a id="a8e885415d65a23f1afeacdef6e39e844"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYLAR_LOG_FMT_ALERT</b>(logger,  fmt, ...)&#160;&#160;&#160;<a class="el" href="log_8h.html#ae918d318a5b900d950f3451925abb536">SYLAR_LOG_FMT_LEVEL</a>(logger, <a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271bafc5ecd11fa48ee949ca768f428dfaa81">sylar::LogLevel::ALERT</a>, fmt, __VA_ARGS__)</td></tr>
+<tr class="separator:a8e885415d65a23f1afeacdef6e39e844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f9f230ac6cc5cce796f48489543b57"><td class="memItemLeft" align="right" valign="top"><a id="a05f9f230ac6cc5cce796f48489543b57"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYLAR_LOG_FMT_CRIT</b>(logger,  fmt, ...)&#160;&#160;&#160;<a class="el" href="log_8h.html#ae918d318a5b900d950f3451925abb536">SYLAR_LOG_FMT_LEVEL</a>(logger, <a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271ba6659b3e3f4080d6e6226312c3ba854bc">sylar::LogLevel::CRIT</a>, fmt, __VA_ARGS__)</td></tr>
+<tr class="separator:a05f9f230ac6cc5cce796f48489543b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163307f64430c88a4cad1e4ee3a7cb15"><td class="memItemLeft" align="right" valign="top"><a id="a163307f64430c88a4cad1e4ee3a7cb15"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYLAR_LOG_FMT_ERROR</b>(logger,  fmt, ...)&#160;&#160;&#160;<a class="el" href="log_8h.html#ae918d318a5b900d950f3451925abb536">SYLAR_LOG_FMT_LEVEL</a>(logger, <a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271bafe503f7b664202f76e0e86e462f8e4f2">sylar::LogLevel::ERROR</a>, fmt, __VA_ARGS__)</td></tr>
+<tr class="separator:a163307f64430c88a4cad1e4ee3a7cb15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d83e9fce3af74fd0163b36fefeafbec"><td class="memItemLeft" align="right" valign="top"><a id="a0d83e9fce3af74fd0163b36fefeafbec"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYLAR_LOG_FMT_WARN</b>(logger,  fmt, ...)&#160;&#160;&#160;<a class="el" href="log_8h.html#ae918d318a5b900d950f3451925abb536">SYLAR_LOG_FMT_LEVEL</a>(logger, <a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271bad21caa6f8ec6a8cd43a97466d1f8a950">sylar::LogLevel::WARN</a>, fmt, __VA_ARGS__)</td></tr>
+<tr class="separator:a0d83e9fce3af74fd0163b36fefeafbec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6590313aec57f9842518a0e18763f7aa"><td class="memItemLeft" align="right" valign="top"><a id="a6590313aec57f9842518a0e18763f7aa"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYLAR_LOG_FMT_NOTICE</b>(logger,  fmt, ...)&#160;&#160;&#160;<a class="el" href="log_8h.html#ae918d318a5b900d950f3451925abb536">SYLAR_LOG_FMT_LEVEL</a>(logger, <a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271ba90c201569d1005ac46660521ff072ff0">sylar::LogLevel::NOTICE</a>, fmt, __VA_ARGS__)</td></tr>
+<tr class="separator:a6590313aec57f9842518a0e18763f7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a951b4acd60849055e8d8941ef92331b5"><td class="memItemLeft" align="right" valign="top"><a id="a951b4acd60849055e8d8941ef92331b5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYLAR_LOG_FMT_INFO</b>(logger,  fmt, ...)&#160;&#160;&#160;<a class="el" href="log_8h.html#ae918d318a5b900d950f3451925abb536">SYLAR_LOG_FMT_LEVEL</a>(logger, <a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271ba9e836b2483673ae6fbe3feef491ea99c">sylar::LogLevel::INFO</a>, fmt, __VA_ARGS__)</td></tr>
+<tr class="separator:a951b4acd60849055e8d8941ef92331b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a231a250f16a67a2b419b589021636885"><td class="memItemLeft" align="right" valign="top"><a id="a231a250f16a67a2b419b589021636885"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SYLAR_LOG_FMT_DEBUG</b>(logger,  fmt, ...)&#160;&#160;&#160;<a class="el" href="log_8h.html#ae918d318a5b900d950f3451925abb536">SYLAR_LOG_FMT_LEVEL</a>(logger, <a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271bae2625cd4626664fa9b0fdf6b938768e7">sylar::LogLevel::DEBUG</a>, fmt, __VA_ARGS__)</td></tr>
+<tr class="separator:a231a250f16a67a2b419b589021636885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a4a808333871328d8fc38e2504000a6fc"><td class="memItemLeft" align="right" valign="top"><a id="a4a808333871328d8fc38e2504000a6fc"></a>
+typedef <a class="el" href="classsylar_1_1Singleton.html">sylar::Singleton</a>&lt; LoggerManager &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a4a808333871328d8fc38e2504000a6fc">sylar::LoggerMgr</a></td></tr>
+<tr class="memdesc:a4a808333871328d8fc38e2504000a6fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志器管理类单例 <br /></td></tr>
+<tr class="separator:a4a808333871328d8fc38e2504000a6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>日志模块 </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-06-08 </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="ae918d318a5b900d950f3451925abb536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae918d318a5b900d950f3451925abb536">&#9670;&nbsp;</a></span>SYLAR_LOG_FMT_LEVEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYLAR_LOG_FMT_LEVEL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">logger, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">level, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">    <span class="keywordflow">if</span>(level &lt;= logger-&gt;getLevel()) \</div>
+<div class="line">        sylar::LogEventWrap(logger, sylar::LogEvent::ptr(<span class="keyword">new</span> <a class="code" href="classsylar_1_1LogEvent.html">sylar::LogEvent</a>(logger-&gt;getName(), \</div>
+<div class="line">            level, __FILE__, __LINE__, sylar::GetElapsedMS() - logger-&gt;getCreateTime(), \</div>
+<div class="line">            sylar::GetThreadId(), sylar::GetFiberId(), time(0), sylar::GetThreadName()))).getLogEvent()-&gt;printf(fmt, __VA_ARGS__)</div>
+<div class="ttc" id="aclasssylar_1_1LogEvent_html"><div class="ttname"><a href="classsylar_1_1LogEvent.html">sylar::LogEvent</a></div><div class="ttdoc">日志事件</div><div class="ttdef"><b>Definition:</b> log.h:138</div></div>
+</div><!-- fragment -->
+<p>使用C printf方式将日志级别level的日志写入到logger </p>
+<p>构造一个LogEventWrap对象，包裹包含日志器和日志事件，在对象析构时调用日志器写日志事件 </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">待办事项:</a></b></dt><dd>协程id未实现，暂时写0 </dd></dl>
+
+</div>
+</div>
+<a id="a797348bb17a64785dd5e4f1282c66028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a797348bb17a64785dd5e4f1282c66028">&#9670;&nbsp;</a></span>SYLAR_LOG_LEVEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SYLAR_LOG_LEVEL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">logger, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">level&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">    <span class="keywordflow">if</span>(level &lt;= logger-&gt;getLevel()) \</div>
+<div class="line">        sylar::LogEventWrap(logger, sylar::LogEvent::ptr(<span class="keyword">new</span> <a class="code" href="classsylar_1_1LogEvent.html">sylar::LogEvent</a>(logger-&gt;getName(), \</div>
+<div class="line">            level, __FILE__, __LINE__, sylar::GetElapsedMS() - logger-&gt;getCreateTime(), \</div>
+<div class="line">            sylar::GetThreadId(), sylar::GetFiberId(), time(0), sylar::GetThreadName()))).getLogEvent()-&gt;getSS()</div>
+</div><!-- fragment -->
+<p>使用流式方式将日志级别level的日志写入到logger </p>
+<p>构造一个LogEventWrap对象，包裹包含日志器和日志事件，在对象析构时调用日志器写日志事件 </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">待办事项:</a></b></dt><dd>协程id未实现，暂时写0 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

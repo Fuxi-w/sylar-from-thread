@@ -1,0 +1,4 @@
+<map id="sylar::Timer::reset" name="sylar::Timer::reset">
+<area shape="rect" id="node1" title="重置定时器时间" alt="" coords="5,29,147,56"/>
+<area shape="rect" id="node2" href="$util_8cpp.html#a3a496fbdbd27f04cba087a64add0306c" title="获取当前启动的毫秒数，参考clock_gettime(2)，使用CLOCK_MONOTONIC_RAW" alt="" coords="195,29,351,56"/>
+</map>

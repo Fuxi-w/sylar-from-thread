@@ -1,0 +1,36 @@
+<map id="sylar/http/http_parser.cc" name="sylar/http/http_parser.cc">
+<area shape="rect" id="node1" title="HTTP协议解析实现" alt="" coords="713,5,891,32"/>
+<area shape="rect" id="node2" href="$http__parser_8h.html" title="HTTP协议解析封装" alt="" coords="467,80,574,107"/>
+<area shape="rect" id="node14" href="$config_8h.html" title="配置模块" alt="" coords="759,80,845,107"/>
+<area shape="rect" id="node27" href="$log_8h.html" title="日志模块" alt="" coords="1129,155,1184,181"/>
+<area shape="rect" id="node3" href="$http_8h.html" title="HTTP定义结构体封装" alt="" coords="329,155,389,181"/>
+<area shape="rect" id="node4" href="$http-parser_2http__parser_8h_source.html" title=" " alt="" coords="709,229,892,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="242,304,301,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="533,229,583,256"/>
+<area shape="rect" id="node9" title=" " alt="" coords="325,304,388,331"/>
+<area shape="rect" id="node10" title=" " alt="" coords="511,304,591,331"/>
+<area shape="rect" id="node11" title=" " alt="" coords="434,229,509,256"/>
+<area shape="rect" id="node12" title=" " alt="" coords="1719,304,1797,331"/>
+<area shape="rect" id="node13" title=" " alt="" coords="91,229,257,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="413,304,487,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="616,304,687,331"/>
+<area shape="rect" id="node15" title=" " alt="" coords="465,155,597,181"/>
+<area shape="rect" id="node16" title=" " alt="" coords="1821,304,1863,331"/>
+<area shape="rect" id="node17" title=" " alt="" coords="673,155,715,181"/>
+<area shape="rect" id="node18" title=" " alt="" coords="740,155,864,181"/>
+<area shape="rect" id="node19" title=" " alt="" coords="889,155,1003,181"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1048,304,1135,331"/>
+<area shape="rect" id="node21" href="$mutex_8h.html" title="信号量，互斥锁，读写锁，范围锁模板，自旋锁，原子锁" alt="" coords="1184,229,1260,256"/>
+<area shape="rect" id="node30" href="$util_8h.html" title="util函数" alt="" coords="968,229,1023,256"/>
+<area shape="rect" id="node22" title=" " alt="" coords="1159,304,1223,331"/>
+<area shape="rect" id="node23" title=" " alt="" coords="1248,304,1332,331"/>
+<area shape="rect" id="node24" title=" " alt="" coords="1357,304,1463,331"/>
+<area shape="rect" id="node25" title=" " alt="" coords="1487,304,1554,331"/>
+<area shape="rect" id="node26" href="$noncopyable_8h.html" title="不可拷贝对象封装" alt="" coords="1578,304,1695,331"/>
+<area shape="rect" id="node28" title=" " alt="" coords="1507,229,1580,256"/>
+<area shape="rect" id="node29" title=" " alt="" coords="1604,229,1675,256"/>
+<area shape="rect" id="node34" href="$singleton_8h.html" title="单例模式封装" alt="" coords="1336,229,1431,256"/>
+<area shape="rect" id="node31" title=" " alt="" coords="711,304,807,331"/>
+<area shape="rect" id="node32" title=" " alt="" coords="831,304,922,331"/>
+<area shape="rect" id="node33" title=" " alt="" coords="946,304,1023,331"/>
+</map>

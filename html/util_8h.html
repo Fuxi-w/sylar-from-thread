@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>sylar-from-scratch: sylar/util.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">sylar-from-scratch
+   </div>
+   <div id="projectbrief">从零开始重写sylar C++高性能分布式服务器框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_85140288eee94f6c1dbd59c496fa876b.html">sylar</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">util.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>util函数  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;sys/types.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;sys/time.h&gt;</code><br />
+<code>#include &lt;cxxabi.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+util.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="util_8h__incl.svg" width="694" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="util_8h__dep__incl.svg" width="3199" height="739"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div>
+<p><a href="util_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1FSUtil.html">sylar::FSUtil</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">文件系统操作类  <a href="classsylar_1_1FSUtil.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TypeUtil.html">sylar::TypeUtil</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">类型转换  <a href="classsylar_1_1TypeUtil.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1StringUtil.html">sylar::StringUtil</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">字符串辅助类  <a href="classsylar_1_1StringUtil.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a7e8a51657b5b5289d1c530f5914bcee8"><td class="memItemLeft" align="right" valign="top">pid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a7e8a51657b5b5289d1c530f5914bcee8">sylar::GetThreadId</a> ()</td></tr>
+<tr class="memdesc:a7e8a51657b5b5289d1c530f5914bcee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取线程id  <a href="util_8cpp.html#a7e8a51657b5b5289d1c530f5914bcee8">更多...</a><br /></td></tr>
+<tr class="separator:a7e8a51657b5b5289d1c530f5914bcee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83fa12d12d237c60b894483ed72d0527"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a83fa12d12d237c60b894483ed72d0527">sylar::GetFiberId</a> ()</td></tr>
+<tr class="memdesc:a83fa12d12d237c60b894483ed72d0527"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取协程id  <a href="util_8cpp.html#a83fa12d12d237c60b894483ed72d0527">更多...</a><br /></td></tr>
+<tr class="separator:a83fa12d12d237c60b894483ed72d0527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a496fbdbd27f04cba087a64add0306c"><td class="memItemLeft" align="right" valign="top"><a id="a3a496fbdbd27f04cba087a64add0306c"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a3a496fbdbd27f04cba087a64add0306c">sylar::GetElapsedMS</a> ()</td></tr>
+<tr class="memdesc:a3a496fbdbd27f04cba087a64add0306c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前启动的毫秒数，参考clock_gettime(2)，使用CLOCK_MONOTONIC_RAW <br /></td></tr>
+<tr class="separator:a3a496fbdbd27f04cba087a64add0306c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec6beb0b77d38e3928b748438b86a1aa"><td class="memItemLeft" align="right" valign="top"><a id="aec6beb0b77d38e3928b748438b86a1aa"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#aec6beb0b77d38e3928b748438b86a1aa">sylar::GetThreadName</a> ()</td></tr>
+<tr class="memdesc:aec6beb0b77d38e3928b748438b86a1aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取线程名称，参考pthread_getname_np(3) <br /></td></tr>
+<tr class="separator:aec6beb0b77d38e3928b748438b86a1aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2cc9a02f0465026fe60111cbb58b636"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#ae2cc9a02f0465026fe60111cbb58b636">sylar::SetThreadName</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:ae2cc9a02f0465026fe60111cbb58b636"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置线程名称，参考pthread_setname_np(3)  <a href="util_8cpp.html#ae2cc9a02f0465026fe60111cbb58b636">更多...</a><br /></td></tr>
+<tr class="separator:ae2cc9a02f0465026fe60111cbb58b636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979537064cb924a4471df38add5686cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a979537064cb924a4471df38add5686cb">sylar::Backtrace</a> (std::vector&lt; std::string &gt; &amp;bt, int size=64, int skip=1)</td></tr>
+<tr class="memdesc:a979537064cb924a4471df38add5686cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前的调用栈  <a href="util_8cpp.html#a979537064cb924a4471df38add5686cb">更多...</a><br /></td></tr>
+<tr class="separator:a979537064cb924a4471df38add5686cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e102f2ca9ed35760090afccd9387ff"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a11e102f2ca9ed35760090afccd9387ff">sylar::BacktraceToString</a> (int size=64, int skip=2, const std::string &amp;prefix=&quot;&quot;)</td></tr>
+<tr class="memdesc:a11e102f2ca9ed35760090afccd9387ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前栈信息的字符串  <a href="util_8cpp.html#a11e102f2ca9ed35760090afccd9387ff">更多...</a><br /></td></tr>
+<tr class="separator:a11e102f2ca9ed35760090afccd9387ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae39a238868576cbc0c1fac03221e3d60"><td class="memItemLeft" align="right" valign="top"><a id="ae39a238868576cbc0c1fac03221e3d60"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#ae39a238868576cbc0c1fac03221e3d60">sylar::GetCurrentMS</a> ()</td></tr>
+<tr class="memdesc:ae39a238868576cbc0c1fac03221e3d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前时间的毫秒 <br /></td></tr>
+<tr class="separator:ae39a238868576cbc0c1fac03221e3d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c597c6caae5df27aa7cc95c75fadfe"><td class="memItemLeft" align="right" valign="top"><a id="aa2c597c6caae5df27aa7cc95c75fadfe"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#aa2c597c6caae5df27aa7cc95c75fadfe">sylar::GetCurrentUS</a> ()</td></tr>
+<tr class="memdesc:aa2c597c6caae5df27aa7cc95c75fadfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前时间的微秒 <br /></td></tr>
+<tr class="separator:aa2c597c6caae5df27aa7cc95c75fadfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade7d65909cd0ce7f024ae7593ddc21e9"><td class="memItemLeft" align="right" valign="top"><a id="ade7d65909cd0ce7f024ae7593ddc21e9"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#ade7d65909cd0ce7f024ae7593ddc21e9">sylar::ToUpper</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:ade7d65909cd0ce7f024ae7593ddc21e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">字符串转大写 <br /></td></tr>
+<tr class="separator:ade7d65909cd0ce7f024ae7593ddc21e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c9db554dae766cd39a3785fc47dc5b3"><td class="memItemLeft" align="right" valign="top"><a id="a0c9db554dae766cd39a3785fc47dc5b3"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a0c9db554dae766cd39a3785fc47dc5b3">sylar::ToLower</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:a0c9db554dae766cd39a3785fc47dc5b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">字符串转小写 <br /></td></tr>
+<tr class="separator:a0c9db554dae766cd39a3785fc47dc5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a3eab16f42dad7f48ec91a2d15ac6b7"><td class="memItemLeft" align="right" valign="top"><a id="a2a3eab16f42dad7f48ec91a2d15ac6b7"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a2a3eab16f42dad7f48ec91a2d15ac6b7">sylar::Time2Str</a> (time_t ts=time(0), const std::string &amp;format=&quot;%Y-%m-%d %H:%M:%S&quot;)</td></tr>
+<tr class="memdesc:a2a3eab16f42dad7f48ec91a2d15ac6b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">日期时间转字符串 <br /></td></tr>
+<tr class="separator:a2a3eab16f42dad7f48ec91a2d15ac6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4188abb21419d9807897fd545f267dd5"><td class="memItemLeft" align="right" valign="top"><a id="a4188abb21419d9807897fd545f267dd5"></a>
+time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a4188abb21419d9807897fd545f267dd5">sylar::Str2Time</a> (const char *str, const char *format=&quot;%Y-%m-%d %H:%M:%S&quot;)</td></tr>
+<tr class="memdesc:a4188abb21419d9807897fd545f267dd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">字符串转日期时间 <br /></td></tr>
+<tr class="separator:a4188abb21419d9807897fd545f267dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba133bec98e7a279fe30ff590f9d58e"><td class="memTemplParams" colspan="2"><a id="a2ba133bec98e7a279fe30ff590f9d58e"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a2ba133bec98e7a279fe30ff590f9d58e"><td class="memTemplItemLeft" align="right" valign="top">const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="util_8h.html#a2ba133bec98e7a279fe30ff590f9d58e">sylar::TypeToName</a> ()</td></tr>
+<tr class="memdesc:a2ba133bec98e7a279fe30ff590f9d58e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取T类型的类型字符串 <br /></td></tr>
+<tr class="separator:a2ba133bec98e7a279fe30ff590f9d58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>util函数 </p>
+<dl class="section version"><dt>版本</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2021-06-08 </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a979537064cb924a4471df38add5686cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a979537064cb924a4471df38add5686cb">&#9670;&nbsp;</a></span>Backtrace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sylar::Backtrace </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>bt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em> = <code>64</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>skip</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前的调用栈 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">bt</td><td>保存调用栈 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>最多返回层数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">skip</td><td>跳过栈顶的层数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="util_8cpp_a979537064cb924a4471df38add5686cb_cgraph.svg" width="138" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a11e102f2ca9ed35760090afccd9387ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11e102f2ca9ed35760090afccd9387ff">&#9670;&nbsp;</a></span>BacktraceToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string sylar::BacktraceToString </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em> = <code>64</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>skip</em> = <code>2</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>prefix</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前栈信息的字符串 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>栈的最大层数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">skip</td><td>跳过栈顶的层数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prefix</td><td>栈信息前输出的内容 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="util_8cpp_a11e102f2ca9ed35760090afccd9387ff_cgraph.svg" width="364" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a83fa12d12d237c60b894483ed72d0527"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83fa12d12d237c60b894483ed72d0527">&#9670;&nbsp;</a></span>GetFiberId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t sylar::GetFiberId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取协程id </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">待办事项:</a></b></dt><dd>桩函数，暂时返回0，等协程模块完善后再返回实际值 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="util_8cpp_a83fa12d12d237c60b894483ed72d0527_cgraph.svg" width="540" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a7e8a51657b5b5289d1c530f5914bcee8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e8a51657b5b5289d1c530f5914bcee8">&#9670;&nbsp;</a></span>GetThreadId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pid_t sylar::GetThreadId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取线程id </p>
+<dl class="section note"><dt>注解</dt><dd>这里不要把pid_t和pthread_t混淆，关于它们之的区别可参考gettid(2) </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="util_8cpp_a7e8a51657b5b5289d1c530f5914bcee8_cgraph.svg" width="154" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ae2cc9a02f0465026fe60111cbb58b636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2cc9a02f0465026fe60111cbb58b636">&#9670;&nbsp;</a></span>SetThreadName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sylar::SetThreadName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置线程名称，参考pthread_setname_np(3) </p>
+<dl class="section note"><dt>注解</dt><dd>线程名称不能超过16字节，包括结尾的'\0'字符 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="util_8cpp_ae2cc9a02f0465026fe60111cbb58b636_cgraph.svg" width="178" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

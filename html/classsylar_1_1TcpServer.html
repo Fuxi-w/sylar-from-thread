@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>sylar-from-scratch: sylar::TcpServer类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">sylar-from-scratch
+   </div>
+   <div id="projectbrief">从零开始重写sylar C++高性能分布式服务器框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>sylar</b></li><li class="navelem"><a class="el" href="classsylar_1_1TcpServer.html">TcpServer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classsylar_1_1TcpServer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">sylar::TcpServer类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>TCP服务器封装  
+ <a href="classsylar_1_1TcpServer.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="tcp__server_8h_source.html">tcp_server.h</a>&gt;</code></p>
+<div class="dynheader">
+类 sylar::TcpServer 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1TcpServer__inherit__graph.svg" width="371" height="720"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+sylar::TcpServer 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1TcpServer__coll__graph.svg" width="692" height="986"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a1b1b774363de05bd0d11e154808eb6eb"><td class="memItemLeft" align="right" valign="top"><a id="a1b1b774363de05bd0d11e154808eb6eb"></a>
+typedef std::shared_ptr&lt; <a class="el" href="classsylar_1_1TcpServer.html">TcpServer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ptr</b></td></tr>
+<tr class="separator:a1b1b774363de05bd0d11e154808eb6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab2831fd666b0bb3042fd11b87089e8d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#ab2831fd666b0bb3042fd11b87089e8d4">TcpServer</a> (<a class="el" href="classsylar_1_1IOManager.html">sylar::IOManager</a> *io_woker=<a class="el" href="classsylar_1_1IOManager.html#a1c94bd6197587c4eead17ae30cb1abea">sylar::IOManager::GetThis</a>(), <a class="el" href="classsylar_1_1IOManager.html">sylar::IOManager</a> *accept_worker=<a class="el" href="classsylar_1_1IOManager.html#a1c94bd6197587c4eead17ae30cb1abea">sylar::IOManager::GetThis</a>())</td></tr>
+<tr class="memdesc:ab2831fd666b0bb3042fd11b87089e8d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <a href="classsylar_1_1TcpServer.html#ab2831fd666b0bb3042fd11b87089e8d4">更多...</a><br /></td></tr>
+<tr class="separator:ab2831fd666b0bb3042fd11b87089e8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a713d8b1c98e863e16363186f604ee0e7"><td class="memItemLeft" align="right" valign="top"><a id="a713d8b1c98e863e16363186f604ee0e7"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#a713d8b1c98e863e16363186f604ee0e7">~TcpServer</a> ()</td></tr>
+<tr class="memdesc:a713d8b1c98e863e16363186f604ee0e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数 <br /></td></tr>
+<tr class="separator:a713d8b1c98e863e16363186f604ee0e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4026fd6dfd3a9ef9866df4b072492b3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#af4026fd6dfd3a9ef9866df4b072492b3">bind</a> (sylar::Address::ptr addr)</td></tr>
+<tr class="memdesc:af4026fd6dfd3a9ef9866df4b072492b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">绑定地址  <a href="classsylar_1_1TcpServer.html#af4026fd6dfd3a9ef9866df4b072492b3">更多...</a><br /></td></tr>
+<tr class="separator:af4026fd6dfd3a9ef9866df4b072492b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a287d55f5d1d78199c709b9c18ea7bf00"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#a287d55f5d1d78199c709b9c18ea7bf00">bind</a> (const std::vector&lt; Address::ptr &gt; &amp;addrs, std::vector&lt; Address::ptr &gt; &amp;fails)</td></tr>
+<tr class="memdesc:a287d55f5d1d78199c709b9c18ea7bf00"><td class="mdescLeft">&#160;</td><td class="mdescRight">绑定地址数组  <a href="classsylar_1_1TcpServer.html#a287d55f5d1d78199c709b9c18ea7bf00">更多...</a><br /></td></tr>
+<tr class="separator:a287d55f5d1d78199c709b9c18ea7bf00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae09031b3e7e6e286c9d8a25a996e0a52"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#ae09031b3e7e6e286c9d8a25a996e0a52">start</a> ()</td></tr>
+<tr class="memdesc:ae09031b3e7e6e286c9d8a25a996e0a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">启动服务  <a href="classsylar_1_1TcpServer.html#ae09031b3e7e6e286c9d8a25a996e0a52">更多...</a><br /></td></tr>
+<tr class="separator:ae09031b3e7e6e286c9d8a25a996e0a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b90d515f280879ddd057c46feb487b4"><td class="memItemLeft" align="right" valign="top"><a id="a5b90d515f280879ddd057c46feb487b4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#a5b90d515f280879ddd057c46feb487b4">stop</a> ()</td></tr>
+<tr class="memdesc:a5b90d515f280879ddd057c46feb487b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止服务 <br /></td></tr>
+<tr class="separator:a5b90d515f280879ddd057c46feb487b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af517f20bb50cb3dc02d5220cb16059fb"><td class="memItemLeft" align="right" valign="top"><a id="af517f20bb50cb3dc02d5220cb16059fb"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#af517f20bb50cb3dc02d5220cb16059fb">getRecvTimeout</a> () const</td></tr>
+<tr class="memdesc:af517f20bb50cb3dc02d5220cb16059fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回读取超时时间(毫秒) <br /></td></tr>
+<tr class="separator:af517f20bb50cb3dc02d5220cb16059fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa18d9f9fffad707061d4bf96451f2a1"><td class="memItemLeft" align="right" valign="top"><a id="afa18d9f9fffad707061d4bf96451f2a1"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#afa18d9f9fffad707061d4bf96451f2a1">getName</a> () const</td></tr>
+<tr class="memdesc:afa18d9f9fffad707061d4bf96451f2a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回服务器名称 <br /></td></tr>
+<tr class="separator:afa18d9f9fffad707061d4bf96451f2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf506161f3352fa94e244aa26fd9e56f"><td class="memItemLeft" align="right" valign="top"><a id="adf506161f3352fa94e244aa26fd9e56f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#adf506161f3352fa94e244aa26fd9e56f">setRecvTimeout</a> (uint64_t v)</td></tr>
+<tr class="memdesc:adf506161f3352fa94e244aa26fd9e56f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置读取超时时间(毫秒) <br /></td></tr>
+<tr class="separator:adf506161f3352fa94e244aa26fd9e56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeebc37c4c913dbab784c7d25a2115992"><td class="memItemLeft" align="right" valign="top"><a id="aeebc37c4c913dbab784c7d25a2115992"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#aeebc37c4c913dbab784c7d25a2115992">setName</a> (const std::string &amp;v)</td></tr>
+<tr class="memdesc:aeebc37c4c913dbab784c7d25a2115992"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置服务器名称 <br /></td></tr>
+<tr class="separator:aeebc37c4c913dbab784c7d25a2115992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc2f7cc515ca4a624d29599dd924cf41"><td class="memItemLeft" align="right" valign="top"><a id="adc2f7cc515ca4a624d29599dd924cf41"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#adc2f7cc515ca4a624d29599dd924cf41">isStop</a> () const</td></tr>
+<tr class="memdesc:adc2f7cc515ca4a624d29599dd924cf41"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否停止 <br /></td></tr>
+<tr class="separator:adc2f7cc515ca4a624d29599dd924cf41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98ce03c1f8c4fc62e1d981c43a6edaae"><td class="memItemLeft" align="right" valign="top"><a id="a98ce03c1f8c4fc62e1d981c43a6edaae"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#a98ce03c1f8c4fc62e1d981c43a6edaae">toString</a> (const std::string &amp;prefix=&quot;&quot;)</td></tr>
+<tr class="memdesc:a98ce03c1f8c4fc62e1d981c43a6edaae"><td class="mdescLeft">&#160;</td><td class="mdescRight">以字符串形式dump server信息 <br /></td></tr>
+<tr class="separator:a98ce03c1f8c4fc62e1d981c43a6edaae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:aa1ef769ce19241eb8892748355612973"><td class="memItemLeft" align="right" valign="top"><a id="aa1ef769ce19241eb8892748355612973"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#aa1ef769ce19241eb8892748355612973">handleClient</a> (Socket::ptr client)</td></tr>
+<tr class="memdesc:aa1ef769ce19241eb8892748355612973"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理新连接的Socket类 <br /></td></tr>
+<tr class="separator:aa1ef769ce19241eb8892748355612973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277af935368549fce8bc175ef1cacffe"><td class="memItemLeft" align="right" valign="top"><a id="a277af935368549fce8bc175ef1cacffe"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#a277af935368549fce8bc175ef1cacffe">startAccept</a> (Socket::ptr sock)</td></tr>
+<tr class="memdesc:a277af935368549fce8bc175ef1cacffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始接受连接 <br /></td></tr>
+<tr class="separator:a277af935368549fce8bc175ef1cacffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a9a7e9678dc10633c3e14052f01df31dc"><td class="memItemLeft" align="right" valign="top"><a id="a9a7e9678dc10633c3e14052f01df31dc"></a>
+std::vector&lt; Socket::ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#a9a7e9678dc10633c3e14052f01df31dc">m_socks</a></td></tr>
+<tr class="memdesc:a9a7e9678dc10633c3e14052f01df31dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">监听Socket数组 <br /></td></tr>
+<tr class="separator:a9a7e9678dc10633c3e14052f01df31dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de72aa9bef40c552d29b71d22f3d61b"><td class="memItemLeft" align="right" valign="top"><a id="a3de72aa9bef40c552d29b71d22f3d61b"></a>
+<a class="el" href="classsylar_1_1IOManager.html">IOManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#a3de72aa9bef40c552d29b71d22f3d61b">m_ioWorker</a></td></tr>
+<tr class="memdesc:a3de72aa9bef40c552d29b71d22f3d61b"><td class="mdescLeft">&#160;</td><td class="mdescRight">新连接的Socket工作的调度器 <br /></td></tr>
+<tr class="separator:a3de72aa9bef40c552d29b71d22f3d61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a422a2b28ab2534ae1a70c3e553d01172"><td class="memItemLeft" align="right" valign="top"><a id="a422a2b28ab2534ae1a70c3e553d01172"></a>
+<a class="el" href="classsylar_1_1IOManager.html">IOManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#a422a2b28ab2534ae1a70c3e553d01172">m_acceptWorker</a></td></tr>
+<tr class="memdesc:a422a2b28ab2534ae1a70c3e553d01172"><td class="mdescLeft">&#160;</td><td class="mdescRight">服务器Socket接收连接的调度器 <br /></td></tr>
+<tr class="separator:a422a2b28ab2534ae1a70c3e553d01172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e920154ce8bd4865669555f91b45bb"><td class="memItemLeft" align="right" valign="top"><a id="a66e920154ce8bd4865669555f91b45bb"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#a66e920154ce8bd4865669555f91b45bb">m_recvTimeout</a></td></tr>
+<tr class="memdesc:a66e920154ce8bd4865669555f91b45bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收超时时间(毫秒) <br /></td></tr>
+<tr class="separator:a66e920154ce8bd4865669555f91b45bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c956ff52912062eeb6fe53f8a712e55"><td class="memItemLeft" align="right" valign="top"><a id="a9c956ff52912062eeb6fe53f8a712e55"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#a9c956ff52912062eeb6fe53f8a712e55">m_name</a></td></tr>
+<tr class="memdesc:a9c956ff52912062eeb6fe53f8a712e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">服务器名称 <br /></td></tr>
+<tr class="separator:a9c956ff52912062eeb6fe53f8a712e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a393335266c777ba4fc4c7299c5e7499a"><td class="memItemLeft" align="right" valign="top"><a id="a393335266c777ba4fc4c7299c5e7499a"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#a393335266c777ba4fc4c7299c5e7499a">m_type</a></td></tr>
+<tr class="memdesc:a393335266c777ba4fc4c7299c5e7499a"><td class="mdescLeft">&#160;</td><td class="mdescRight">服务器类型 <br /></td></tr>
+<tr class="separator:a393335266c777ba4fc4c7299c5e7499a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad56141ae810906378dd8fc3fc98b0bfd"><td class="memItemLeft" align="right" valign="top"><a id="ad56141ae810906378dd8fc3fc98b0bfd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1TcpServer.html#ad56141ae810906378dd8fc3fc98b0bfd">m_isStop</a></td></tr>
+<tr class="memdesc:ad56141ae810906378dd8fc3fc98b0bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">服务是否停止 <br /></td></tr>
+<tr class="separator:ad56141ae810906378dd8fc3fc98b0bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>TCP服务器封装 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ab2831fd666b0bb3042fd11b87089e8d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2831fd666b0bb3042fd11b87089e8d4">&#9670;&nbsp;</a></span>TcpServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sylar::TcpServer::TcpServer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsylar_1_1IOManager.html">sylar::IOManager</a> *&#160;</td>
+          <td class="paramname"><em>io_woker</em> = <code><a class="el" href="classsylar_1_1IOManager.html#a1c94bd6197587c4eead17ae30cb1abea">sylar::IOManager::GetThis</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classsylar_1_1IOManager.html">sylar::IOManager</a> *&#160;</td>
+          <td class="paramname"><em>accept_worker</em> = <code><a class="el" href="classsylar_1_1IOManager.html#a1c94bd6197587c4eead17ae30cb1abea">sylar::IOManager::GetThis</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>服务器名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>服务器类型 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">io_worker</td><td>socket客户端工作的协程调度器 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accept_worker</td><td>服务器socket执行接收socket连接的协程调度器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a287d55f5d1d78199c709b9c18ea7bf00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a287d55f5d1d78199c709b9c18ea7bf00">&#9670;&nbsp;</a></span>bind() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sylar::TcpServer::bind </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; Address::ptr &gt; &amp;&#160;</td>
+          <td class="paramname"><em>addrs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; Address::ptr &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fails</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绑定地址数组 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addrs</td><td>需要绑定的地址数组 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">fails</td><td>绑定失败的地址 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否绑定成功 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1TcpServer_a287d55f5d1d78199c709b9c18ea7bf00_cgraph.svg" width="604" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="af4026fd6dfd3a9ef9866df4b072492b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4026fd6dfd3a9ef9866df4b072492b3">&#9670;&nbsp;</a></span>bind() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sylar::TcpServer::bind </td>
+          <td>(</td>
+          <td class="paramtype">sylar::Address::ptr&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绑定地址 </p>
+<dl class="section return"><dt>返回</dt><dd>返回是否绑定成功 </dd></dl>
+
+</div>
+</div>
+<a id="ae09031b3e7e6e286c9d8a25a996e0a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae09031b3e7e6e286c9d8a25a996e0a52">&#9670;&nbsp;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sylar::TcpServer::start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>启动服务 </p>
+<dl class="section pre"><dt>前置条件</dt><dd>需要bind成功后执行 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1TcpServer_ae09031b3e7e6e286c9d8a25a996e0a52_cgraph.svg" width="887" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>sylar/<a class="el" href="tcp__server_8h_source.html">tcp_server.h</a></li>
+<li>sylar/tcp_server.cc</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

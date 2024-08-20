@@ -1,0 +1,4 @@
+<map id="sylar::http::ServletDispatch::handle" name="sylar::http::ServletDispatch::handle">
+<area shape="rect" id="node1" title="处理请求" alt="" coords="5,5,204,47"/>
+<area shape="rect" id="node2" href="$classsylar_1_1http_1_1ServletDispatch.html#a13ee79301fb4a3ad973e10f5a83be308" title="通过uri获取servlet" alt="" coords="252,5,451,47"/>
+</map>

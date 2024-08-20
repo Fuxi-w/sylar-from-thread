@@ -1,0 +1,6 @@
+<map id="sylar::http::HttpRequest::getParam" name="sylar::http::HttpRequest::getParam">
+<area shape="rect" id="node1" title="获取HTTP请求的请求参数" alt="" coords="5,39,183,80"/>
+<area shape="rect" id="node2" href="$classsylar_1_1http_1_1HttpRequest.html#a761c7664fae782854b91cc5ff7a67a7c" title="当content&#45;type是application/x&#45;www&#45;form&#45;urlencoded时，提取消息体中的表单参数" alt="" coords="231,5,408,47"/>
+<area shape="rect" id="node4" href="$classsylar_1_1http_1_1HttpRequest.html#a4b0d927425fc97ecdc76d494890ed11d" title="提取url中的查询参数" alt="" coords="231,71,408,112"/>
+<area shape="rect" id="node3" href="$classsylar_1_1http_1_1HttpRequest.html#a30010fd520c46200b7ecbe2f0d2349fd" title="获取HTTP请求的头部参数" alt="" coords="456,5,633,47"/>
+</map>

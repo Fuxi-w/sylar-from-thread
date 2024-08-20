@@ -1,0 +1,3 @@
+<map id="sylar::http::checkGetAs" name="sylar::http::checkGetAs">
+<area shape="rect" id="node1" title="获取Map中的key值,并转成对应类型,返回是否成功" alt="" coords="5,29,179,56"/>
+</map>

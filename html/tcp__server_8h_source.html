@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>sylar-from-scratch: sylar/tcp_server.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">sylar-from-scratch
+   </div>
+   <div id="projectbrief">从零开始重写sylar C++高性能分布式服务器框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_85140288eee94f6c1dbd59c496fa876b.html">sylar</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">tcp_server.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="tcp__server_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef __SYLAR_TCP_SERVER_H__</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define __SYLAR_TCP_SERVER_H__</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="address_8h.html">address.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="iomanager_8h.html">iomanager.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="socket_8h.html">socket.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="noncopyable_8h.html">noncopyable.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="config_8h.html">config.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>sylar {</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classsylar_1_1TcpServer.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classsylar_1_1TcpServer.html">TcpServer</a> : <span class="keyword">public</span> std::enable_shared_from_this&lt;TcpServer&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                    , <a class="code" href="classsylar_1_1Noncopyable.html">Noncopyable</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;TcpServer&gt; ptr;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classsylar_1_1TcpServer.html#ab2831fd666b0bb3042fd11b87089e8d4">TcpServer</a>(<a class="code" href="classsylar_1_1IOManager.html">sylar::IOManager</a>* io_woker = <a class="code" href="classsylar_1_1IOManager.html#a1c94bd6197587c4eead17ae30cb1abea">sylar::IOManager::GetThis</a>()</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;              ,<a class="code" href="classsylar_1_1IOManager.html">sylar::IOManager</a>* accept_worker = <a class="code" href="classsylar_1_1IOManager.html#a1c94bd6197587c4eead17ae30cb1abea">sylar::IOManager::GetThis</a>());</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classsylar_1_1TcpServer.html#a713d8b1c98e863e16363186f604ee0e7">~TcpServer</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classsylar_1_1TcpServer.html#af4026fd6dfd3a9ef9866df4b072492b3">bind</a>(sylar::Address::ptr addr);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classsylar_1_1TcpServer.html#af4026fd6dfd3a9ef9866df4b072492b3">bind</a>(<span class="keyword">const</span> std::vector&lt;Address::ptr&gt;&amp; addrs</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        ,std::vector&lt;Address::ptr&gt;&amp; fails);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classsylar_1_1TcpServer.html#ae09031b3e7e6e286c9d8a25a996e0a52">start</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classsylar_1_1TcpServer.html#a5b90d515f280879ddd057c46feb487b4">stop</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classsylar_1_1TcpServer.html#af517f20bb50cb3dc02d5220cb16059fb">   72</a></span>&#160;    uint64_t <a class="code" href="classsylar_1_1TcpServer.html#af517f20bb50cb3dc02d5220cb16059fb">getRecvTimeout</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classsylar_1_1TcpServer.html#a66e920154ce8bd4865669555f91b45bb">m_recvTimeout</a>;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classsylar_1_1TcpServer.html#afa18d9f9fffad707061d4bf96451f2a1">   77</a></span>&#160;    std::string <a class="code" href="classsylar_1_1TcpServer.html#afa18d9f9fffad707061d4bf96451f2a1">getName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classsylar_1_1TcpServer.html#a9c956ff52912062eeb6fe53f8a712e55">m_name</a>;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classsylar_1_1TcpServer.html#adf506161f3352fa94e244aa26fd9e56f">   82</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classsylar_1_1TcpServer.html#adf506161f3352fa94e244aa26fd9e56f">setRecvTimeout</a>(uint64_t v) { <a class="code" href="classsylar_1_1TcpServer.html#a66e920154ce8bd4865669555f91b45bb">m_recvTimeout</a> = v;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classsylar_1_1TcpServer.html#aeebc37c4c913dbab784c7d25a2115992">   87</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classsylar_1_1TcpServer.html#aeebc37c4c913dbab784c7d25a2115992">setName</a>(<span class="keyword">const</span> std::string&amp; v) { <a class="code" href="classsylar_1_1TcpServer.html#a9c956ff52912062eeb6fe53f8a712e55">m_name</a> = v;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classsylar_1_1TcpServer.html#adc2f7cc515ca4a624d29599dd924cf41">   92</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classsylar_1_1TcpServer.html#adc2f7cc515ca4a624d29599dd924cf41">isStop</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classsylar_1_1TcpServer.html#ad56141ae810906378dd8fc3fc98b0bfd">m_isStop</a>;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="classsylar_1_1TcpServer.html#a98ce03c1f8c4fc62e1d981c43a6edaae">toString</a>(<span class="keyword">const</span> std::string&amp; prefix = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classsylar_1_1TcpServer.html#aa1ef769ce19241eb8892748355612973">handleClient</a>(Socket::ptr client);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classsylar_1_1TcpServer.html#a277af935368549fce8bc175ef1cacffe">startAccept</a>(Socket::ptr sock);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classsylar_1_1TcpServer.html#a9a7e9678dc10633c3e14052f01df31dc">  112</a></span>&#160;    std::vector&lt;Socket::ptr&gt; <a class="code" href="classsylar_1_1TcpServer.html#a9a7e9678dc10633c3e14052f01df31dc">m_socks</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classsylar_1_1TcpServer.html#a3de72aa9bef40c552d29b71d22f3d61b">  114</a></span>&#160;    <a class="code" href="classsylar_1_1IOManager.html">IOManager</a>* <a class="code" href="classsylar_1_1TcpServer.html#a3de72aa9bef40c552d29b71d22f3d61b">m_ioWorker</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classsylar_1_1TcpServer.html#a422a2b28ab2534ae1a70c3e553d01172">  116</a></span>&#160;    <a class="code" href="classsylar_1_1IOManager.html">IOManager</a>* <a class="code" href="classsylar_1_1TcpServer.html#a422a2b28ab2534ae1a70c3e553d01172">m_acceptWorker</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classsylar_1_1TcpServer.html#a66e920154ce8bd4865669555f91b45bb">  118</a></span>&#160;    uint64_t <a class="code" href="classsylar_1_1TcpServer.html#a66e920154ce8bd4865669555f91b45bb">m_recvTimeout</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classsylar_1_1TcpServer.html#a9c956ff52912062eeb6fe53f8a712e55">  120</a></span>&#160;    std::string <a class="code" href="classsylar_1_1TcpServer.html#a9c956ff52912062eeb6fe53f8a712e55">m_name</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classsylar_1_1TcpServer.html#a393335266c777ba4fc4c7299c5e7499a">  122</a></span>&#160;    std::string <a class="code" href="classsylar_1_1TcpServer.html#a393335266c777ba4fc4c7299c5e7499a">m_type</a>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="classsylar_1_1TcpServer.html#ad56141ae810906378dd8fc3fc98b0bfd">  124</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classsylar_1_1TcpServer.html#ad56141ae810906378dd8fc3fc98b0bfd">m_isStop</a>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;};</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aaddress_8h_html"><div class="ttname"><a href="address_8h.html">address.h</a></div><div class="ttdoc">网络地址的封装(IPv4,IPv6,Unix)</div></div>
+<div class="ttc" id="aclasssylar_1_1IOManager_html"><div class="ttname"><a href="classsylar_1_1IOManager.html">sylar::IOManager</a></div><div class="ttdef"><b>Definition:</b> iomanager.h:16</div></div>
+<div class="ttc" id="aclasssylar_1_1IOManager_html_a1c94bd6197587c4eead17ae30cb1abea"><div class="ttname"><a href="classsylar_1_1IOManager.html#a1c94bd6197587c4eead17ae30cb1abea">sylar::IOManager::GetThis</a></div><div class="ttdeci">static IOManager * GetThis()</div><div class="ttdoc">返回当前的IOManager</div><div class="ttdef"><b>Definition:</b> iomanager.cc:326</div></div>
+<div class="ttc" id="aclasssylar_1_1Noncopyable_html"><div class="ttname"><a href="classsylar_1_1Noncopyable.html">sylar::Noncopyable</a></div><div class="ttdoc">对象无法拷贝,赋值</div><div class="ttdef"><b>Definition:</b> noncopyable.h:17</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html"><div class="ttname"><a href="classsylar_1_1TcpServer.html">sylar::TcpServer</a></div><div class="ttdoc">TCP服务器封装</div><div class="ttdef"><b>Definition:</b> tcp_server.h:25</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_a277af935368549fce8bc175ef1cacffe"><div class="ttname"><a href="classsylar_1_1TcpServer.html#a277af935368549fce8bc175ef1cacffe">sylar::TcpServer::startAccept</a></div><div class="ttdeci">virtual void startAccept(Socket::ptr sock)</div><div class="ttdoc">开始接受连接</div><div class="ttdef"><b>Definition:</b> tcp_server.cc:71</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_a393335266c777ba4fc4c7299c5e7499a"><div class="ttname"><a href="classsylar_1_1TcpServer.html#a393335266c777ba4fc4c7299c5e7499a">sylar::TcpServer::m_type</a></div><div class="ttdeci">std::string m_type</div><div class="ttdoc">服务器类型</div><div class="ttdef"><b>Definition:</b> tcp_server.h:122</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_a3de72aa9bef40c552d29b71d22f3d61b"><div class="ttname"><a href="classsylar_1_1TcpServer.html#a3de72aa9bef40c552d29b71d22f3d61b">sylar::TcpServer::m_ioWorker</a></div><div class="ttdeci">IOManager * m_ioWorker</div><div class="ttdoc">新连接的Socket工作的调度器</div><div class="ttdef"><b>Definition:</b> tcp_server.h:114</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_a422a2b28ab2534ae1a70c3e553d01172"><div class="ttname"><a href="classsylar_1_1TcpServer.html#a422a2b28ab2534ae1a70c3e553d01172">sylar::TcpServer::m_acceptWorker</a></div><div class="ttdeci">IOManager * m_acceptWorker</div><div class="ttdoc">服务器Socket接收连接的调度器</div><div class="ttdef"><b>Definition:</b> tcp_server.h:116</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_a5b90d515f280879ddd057c46feb487b4"><div class="ttname"><a href="classsylar_1_1TcpServer.html#a5b90d515f280879ddd057c46feb487b4">sylar::TcpServer::stop</a></div><div class="ttdeci">virtual void stop()</div><div class="ttdoc">停止服务</div><div class="ttdef"><b>Definition:</b> tcp_server.cc:97</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_a66e920154ce8bd4865669555f91b45bb"><div class="ttname"><a href="classsylar_1_1TcpServer.html#a66e920154ce8bd4865669555f91b45bb">sylar::TcpServer::m_recvTimeout</a></div><div class="ttdeci">uint64_t m_recvTimeout</div><div class="ttdoc">接收超时时间(毫秒)</div><div class="ttdef"><b>Definition:</b> tcp_server.h:118</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_a713d8b1c98e863e16363186f604ee0e7"><div class="ttname"><a href="classsylar_1_1TcpServer.html#a713d8b1c98e863e16363186f604ee0e7">sylar::TcpServer::~TcpServer</a></div><div class="ttdeci">virtual ~TcpServer()</div><div class="ttdoc">析构函数</div><div class="ttdef"><b>Definition:</b> tcp_server.cc:23</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_a98ce03c1f8c4fc62e1d981c43a6edaae"><div class="ttname"><a href="classsylar_1_1TcpServer.html#a98ce03c1f8c4fc62e1d981c43a6edaae">sylar::TcpServer::toString</a></div><div class="ttdeci">virtual std::string toString(const std::string &amp;prefix=&quot;&quot;)</div><div class="ttdoc">以字符串形式dump server信息</div><div class="ttdef"><b>Definition:</b> tcp_server.cc:113</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_a9a7e9678dc10633c3e14052f01df31dc"><div class="ttname"><a href="classsylar_1_1TcpServer.html#a9a7e9678dc10633c3e14052f01df31dc">sylar::TcpServer::m_socks</a></div><div class="ttdeci">std::vector&lt; Socket::ptr &gt; m_socks</div><div class="ttdoc">监听Socket数组</div><div class="ttdef"><b>Definition:</b> tcp_server.h:112</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_a9c956ff52912062eeb6fe53f8a712e55"><div class="ttname"><a href="classsylar_1_1TcpServer.html#a9c956ff52912062eeb6fe53f8a712e55">sylar::TcpServer::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdoc">服务器名称</div><div class="ttdef"><b>Definition:</b> tcp_server.h:120</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_aa1ef769ce19241eb8892748355612973"><div class="ttname"><a href="classsylar_1_1TcpServer.html#aa1ef769ce19241eb8892748355612973">sylar::TcpServer::handleClient</a></div><div class="ttdeci">virtual void handleClient(Socket::ptr client)</div><div class="ttdoc">处理新连接的Socket类</div><div class="ttdef"><b>Definition:</b> tcp_server.cc:109</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_ab2831fd666b0bb3042fd11b87089e8d4"><div class="ttname"><a href="classsylar_1_1TcpServer.html#ab2831fd666b0bb3042fd11b87089e8d4">sylar::TcpServer::TcpServer</a></div><div class="ttdeci">TcpServer(sylar::IOManager *io_woker=sylar::IOManager::GetThis(), sylar::IOManager *accept_worker=sylar::IOManager::GetThis())</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>Definition:</b> tcp_server.cc:13</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_ad56141ae810906378dd8fc3fc98b0bfd"><div class="ttname"><a href="classsylar_1_1TcpServer.html#ad56141ae810906378dd8fc3fc98b0bfd">sylar::TcpServer::m_isStop</a></div><div class="ttdeci">bool m_isStop</div><div class="ttdoc">服务是否停止</div><div class="ttdef"><b>Definition:</b> tcp_server.h:124</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_adc2f7cc515ca4a624d29599dd924cf41"><div class="ttname"><a href="classsylar_1_1TcpServer.html#adc2f7cc515ca4a624d29599dd924cf41">sylar::TcpServer::isStop</a></div><div class="ttdeci">bool isStop() const</div><div class="ttdoc">是否停止</div><div class="ttdef"><b>Definition:</b> tcp_server.h:92</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_adf506161f3352fa94e244aa26fd9e56f"><div class="ttname"><a href="classsylar_1_1TcpServer.html#adf506161f3352fa94e244aa26fd9e56f">sylar::TcpServer::setRecvTimeout</a></div><div class="ttdeci">void setRecvTimeout(uint64_t v)</div><div class="ttdoc">设置读取超时时间(毫秒)</div><div class="ttdef"><b>Definition:</b> tcp_server.h:82</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_ae09031b3e7e6e286c9d8a25a996e0a52"><div class="ttname"><a href="classsylar_1_1TcpServer.html#ae09031b3e7e6e286c9d8a25a996e0a52">sylar::TcpServer::start</a></div><div class="ttdeci">virtual bool start()</div><div class="ttdoc">启动服务</div><div class="ttdef"><b>Definition:</b> tcp_server.cc:85</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_aeebc37c4c913dbab784c7d25a2115992"><div class="ttname"><a href="classsylar_1_1TcpServer.html#aeebc37c4c913dbab784c7d25a2115992">sylar::TcpServer::setName</a></div><div class="ttdeci">virtual void setName(const std::string &amp;v)</div><div class="ttdoc">设置服务器名称</div><div class="ttdef"><b>Definition:</b> tcp_server.h:87</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_af4026fd6dfd3a9ef9866df4b072492b3"><div class="ttname"><a href="classsylar_1_1TcpServer.html#af4026fd6dfd3a9ef9866df4b072492b3">sylar::TcpServer::bind</a></div><div class="ttdeci">virtual bool bind(sylar::Address::ptr addr)</div><div class="ttdoc">绑定地址</div><div class="ttdef"><b>Definition:</b> tcp_server.cc:30</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_af517f20bb50cb3dc02d5220cb16059fb"><div class="ttname"><a href="classsylar_1_1TcpServer.html#af517f20bb50cb3dc02d5220cb16059fb">sylar::TcpServer::getRecvTimeout</a></div><div class="ttdeci">uint64_t getRecvTimeout() const</div><div class="ttdoc">返回读取超时时间(毫秒)</div><div class="ttdef"><b>Definition:</b> tcp_server.h:72</div></div>
+<div class="ttc" id="aclasssylar_1_1TcpServer_html_afa18d9f9fffad707061d4bf96451f2a1"><div class="ttname"><a href="classsylar_1_1TcpServer.html#afa18d9f9fffad707061d4bf96451f2a1">sylar::TcpServer::getName</a></div><div class="ttdeci">std::string getName() const</div><div class="ttdoc">返回服务器名称</div><div class="ttdef"><b>Definition:</b> tcp_server.h:77</div></div>
+<div class="ttc" id="aconfig_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div><div class="ttdoc">配置模块</div></div>
+<div class="ttc" id="aiomanager_8h_html"><div class="ttname"><a href="iomanager_8h.html">iomanager.h</a></div><div class="ttdoc">IO协程调度器</div></div>
+<div class="ttc" id="anoncopyable_8h_html"><div class="ttname"><a href="noncopyable_8h.html">noncopyable.h</a></div><div class="ttdoc">不可拷贝对象封装</div></div>
+<div class="ttc" id="asocket_8h_html"><div class="ttname"><a href="socket_8h.html">socket.h</a></div><div class="ttdoc">Socket封装</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

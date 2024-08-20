@@ -1,0 +1,5 @@
+<map id="sylar::TcpServer::bind" name="sylar::TcpServer::bind">
+<area shape="rect" id="node1" title="绑定地址数组" alt="" coords="5,5,167,32"/>
+<area shape="rect" id="node2" href="$classsylar_1_1Socket.html#ad48fcf05aa5ddd94263634371edde7b1" title="创建TCP Socket(满足地址类型)" alt="" coords="215,5,395,32"/>
+<area shape="rect" id="node3" href="$classsylar_1_1Socket.html#ad7d10ddda988d74a39f8ea80023933c6" title="Socket构造函数" alt="" coords="443,5,599,32"/>
+</map>

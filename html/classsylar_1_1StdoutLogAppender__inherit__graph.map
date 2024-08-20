@@ -1,0 +1,4 @@
+<map id="sylar::StdoutLogAppender" name="sylar::StdoutLogAppender">
+<area shape="rect" id="node1" title="输出到控制台的Appender" alt="" coords="5,233,195,340"/>
+<area shape="rect" id="node2" href="$classsylar_1_1LogAppender.html" title="日志输出地，虚基类，用于派生出不同的LogAppender" alt="" coords="17,5,183,185"/>
+</map>

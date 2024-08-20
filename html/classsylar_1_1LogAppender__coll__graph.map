@@ -1,0 +1,5 @@
+<map id="sylar::LogAppender" name="sylar::LogAppender">
+<area shape="rect" id="node1" title="日志输出地，虚基类，用于派生出不同的LogAppender" alt="" coords="5,360,172,525"/>
+<area shape="rect" id="node2" href="$classsylar_1_1Spinlock.html" title="自旋锁" alt="" coords="30,176,147,297"/>
+<area shape="rect" id="node3" href="$classsylar_1_1Noncopyable.html" title="对象无法拷贝,赋值" alt="" coords="15,5,162,127"/>
+</map>

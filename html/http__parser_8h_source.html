@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>sylar-from-scratch: sylar/http/http_parser.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">sylar-from-scratch
+   </div>
+   <div id="projectbrief">从零开始重写sylar C++高性能分布式服务器框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_85140288eee94f6c1dbd59c496fa876b.html">sylar</a></li><li class="navelem"><a class="el" href="dir_5fdfbf8b0b8272587873e17fac938b86.html">http</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">http_parser.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="http__parser_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef __SYLAR_HTTP_PARSER_H__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define __SYLAR_HTTP_PARSER_H__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="http_8h.html">http.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>sylar {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>http {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpRequestParser.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classsylar_1_1http_1_1HttpRequestParser.html">HttpRequestParser</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpRequestParser.html#a11aab8b5ba2fc529782d0f957f39f143">   21</a></span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;HttpRequestParser&gt; <a class="code" href="classsylar_1_1http_1_1HttpRequestParser.html#a11aab8b5ba2fc529782d0f957f39f143">ptr</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classsylar_1_1http_1_1HttpRequestParser.html#af3b698fd818508e8c1d3cbacf1f09904">HttpRequestParser</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="classsylar_1_1http_1_1HttpRequestParser.html#a74bd07f8c2f84b73cae920186c18dc97">execute</a>(<span class="keywordtype">char</span> *data, <span class="keywordtype">size_t</span> len);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpRequestParser.html#af6ee71d2a1328ab98e5f31bffc5d525d">   40</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classsylar_1_1http_1_1HttpRequestParser.html#af6ee71d2a1328ab98e5f31bffc5d525d">isFinished</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_finished; }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpRequestParser.html#a57d96b6a7e51c0d8468bb765e15cfdb2">   45</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classsylar_1_1http_1_1HttpRequestParser.html#a57d96b6a7e51c0d8468bb765e15cfdb2">setFinished</a>(<span class="keywordtype">bool</span> v) { m_finished = v; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpRequestParser.html#aac9c66a4d2461c47ab5039e74a67587d">   51</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classsylar_1_1http_1_1HttpRequestParser.html#aac9c66a4d2461c47ab5039e74a67587d">hasError</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !!m_error; }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpRequestParser.html#ab5e9986cd0098607c5ec98ee73e90eb7">   57</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classsylar_1_1http_1_1HttpRequestParser.html#ab5e9986cd0098607c5ec98ee73e90eb7">setError</a>(<span class="keywordtype">int</span> v) { m_error = v; }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpRequestParser.html#a2cc8f2543a48df9f82655a370e1103cb">   62</a></span>&#160;    <a class="code" href="classsylar_1_1http_1_1HttpRequest.html#a04b3c9ae1818394b618e602b3ba835b8">HttpRequest::ptr</a> <a class="code" href="classsylar_1_1http_1_1HttpRequestParser.html#a2cc8f2543a48df9f82655a370e1103cb">getData</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_data; }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpRequestParser.html#a8660406c5ebc9073d61bbc3824b64bcd">   67</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="structhttp__parser.html">http_parser</a> &amp;<a class="code" href="classsylar_1_1http_1_1HttpRequestParser.html#a8660406c5ebc9073d61bbc3824b64bcd">getParser</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_parser; }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpRequestParser.html#af223140b13ef5847f3d571aca1b069e5">   72</a></span>&#160;    <span class="keyword">const</span> std::string &amp;<a class="code" href="classsylar_1_1http_1_1HttpRequestParser.html#af223140b13ef5847f3d571aca1b069e5">getField</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_field; }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpRequestParser.html#aa09b22d0794220649d324fe7d6a09cc5">   77</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classsylar_1_1http_1_1HttpRequestParser.html#aa09b22d0794220649d324fe7d6a09cc5">setField</a>(<span class="keyword">const</span> std::string &amp;v) { m_field = v; }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">static</span> uint64_t <a class="code" href="classsylar_1_1http_1_1HttpRequestParser.html#a5481748d0ddd934819a4bc59d81ae2d5">GetHttpRequestBufferSize</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">static</span> uint64_t <a class="code" href="classsylar_1_1http_1_1HttpRequestParser.html#aa08f64fcf795790e928bb72764928134">GetHttpRequestMaxBodySize</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="structhttp__parser.html">http_parser</a> m_parser;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="classsylar_1_1http_1_1HttpRequest.html#a04b3c9ae1818394b618e602b3ba835b8">HttpRequest::ptr</a> m_data;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">int</span> m_error;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">bool</span> m_finished;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    std::string m_field;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpResponseParser.html">  106</a></span>&#160;<span class="keyword">class </span><a class="code" href="classsylar_1_1http_1_1HttpResponseParser.html">HttpResponseParser</a> {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpResponseParser.html#ac7303cf793b89e7c1cf2fae9b0e5be44">  109</a></span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;HttpResponseParser&gt; <a class="code" href="classsylar_1_1http_1_1HttpResponseParser.html#ac7303cf793b89e7c1cf2fae9b0e5be44">ptr</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="classsylar_1_1http_1_1HttpResponseParser.html#ae521eed3394982b0c6f1aca73bb68b07">HttpResponseParser</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="classsylar_1_1http_1_1HttpResponseParser.html#af100bbfe981c8004870a635655132039">execute</a>(<span class="keywordtype">char</span> *data, <span class="keywordtype">size_t</span> len);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpResponseParser.html#a1ac606e4a00a24000fb01297821a8eab">  128</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classsylar_1_1http_1_1HttpResponseParser.html#a1ac606e4a00a24000fb01297821a8eab">isFinished</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_finished; }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpResponseParser.html#acf7a06bf070f726c61669aba116ae7be">  133</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classsylar_1_1http_1_1HttpResponseParser.html#acf7a06bf070f726c61669aba116ae7be">setFinished</a>(<span class="keywordtype">bool</span> v) { m_finished = v; }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpResponseParser.html#abb68228f9942dcb3504ec9504a6baad3">  138</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classsylar_1_1http_1_1HttpResponseParser.html#abb68228f9942dcb3504ec9504a6baad3">hasError</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !!m_error; }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpResponseParser.html#afa081cd671b81f4124f3d28eac9586d5">  144</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classsylar_1_1http_1_1HttpResponseParser.html#afa081cd671b81f4124f3d28eac9586d5">setError</a>(<span class="keywordtype">int</span> v) { m_error = v; }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpResponseParser.html#a8e6429a613316bb32b7ba02a1984fb0d">  149</a></span>&#160;    <a class="code" href="classsylar_1_1http_1_1HttpResponse.html#a69535456f2042c35c1a2758fc79f08ca">HttpResponse::ptr</a> <a class="code" href="classsylar_1_1http_1_1HttpResponseParser.html#a8e6429a613316bb32b7ba02a1984fb0d">getData</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_data; }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpResponseParser.html#a8a78ab960029f95b10bf1ddd02a37b8f">  154</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="structhttp__parser.html">http_parser</a> &amp;<a class="code" href="classsylar_1_1http_1_1HttpResponseParser.html#a8a78ab960029f95b10bf1ddd02a37b8f">getParser</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_parser; }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpResponseParser.html#a8688ada9505f299f1c1e00bb3773cdcc">  159</a></span>&#160;    <span class="keyword">const</span> std::string &amp;<a class="code" href="classsylar_1_1http_1_1HttpResponseParser.html#a8688ada9505f299f1c1e00bb3773cdcc">getField</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_field; }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="classsylar_1_1http_1_1HttpResponseParser.html#abcfcf26a8c5b653b0d91562ae16a0480">  164</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classsylar_1_1http_1_1HttpResponseParser.html#abcfcf26a8c5b653b0d91562ae16a0480">setField</a>(<span class="keyword">const</span> std::string &amp;v) { m_field = v; }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keyword">static</span> uint64_t <a class="code" href="classsylar_1_1http_1_1HttpResponseParser.html#a80f52d154c8fac9f9689fb34b0560d26">GetHttpResponseBufferSize</a>();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keyword">static</span> uint64_t <a class="code" href="classsylar_1_1http_1_1HttpResponseParser.html#a494c5a844ab921bd8a241c7cc3afb63b">GetHttpResponseMaxBodySize</a>();</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <a class="code" href="structhttp__parser.html">http_parser</a> m_parser;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <a class="code" href="classsylar_1_1http_1_1HttpResponse.html#a69535456f2042c35c1a2758fc79f08ca">HttpResponse::ptr</a> m_data;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordtype">int</span> m_error;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordtype">bool</span> m_finished;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    std::string m_field;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;};</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;} <span class="comment">// namespace http</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;} <span class="comment">// namespace sylar</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpRequestParser_html"><div class="ttname"><a href="classsylar_1_1http_1_1HttpRequestParser.html">sylar::http::HttpRequestParser</a></div><div class="ttdoc">HTTP请求解析类</div><div class="ttdef"><b>Definition:</b> http_parser.h:18</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpRequestParser_html_a11aab8b5ba2fc529782d0f957f39f143"><div class="ttname"><a href="classsylar_1_1http_1_1HttpRequestParser.html#a11aab8b5ba2fc529782d0f957f39f143">sylar::http::HttpRequestParser::ptr</a></div><div class="ttdeci">std::shared_ptr&lt; HttpRequestParser &gt; ptr</div><div class="ttdoc">HTTP解析类的智能指针</div><div class="ttdef"><b>Definition:</b> http_parser.h:21</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpRequestParser_html_a2cc8f2543a48df9f82655a370e1103cb"><div class="ttname"><a href="classsylar_1_1http_1_1HttpRequestParser.html#a2cc8f2543a48df9f82655a370e1103cb">sylar::http::HttpRequestParser::getData</a></div><div class="ttdeci">HttpRequest::ptr getData() const</div><div class="ttdoc">返回HttpRequest结构体</div><div class="ttdef"><b>Definition:</b> http_parser.h:62</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpRequestParser_html_a5481748d0ddd934819a4bc59d81ae2d5"><div class="ttname"><a href="classsylar_1_1http_1_1HttpRequestParser.html#a5481748d0ddd934819a4bc59d81ae2d5">sylar::http::HttpRequestParser::GetHttpRequestBufferSize</a></div><div class="ttdeci">static uint64_t GetHttpRequestBufferSize()</div><div class="ttdoc">返回HttpRequest协议解析的缓存大小</div><div class="ttdef"><b>Definition:</b> http_parser.cc:33</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpRequestParser_html_a57d96b6a7e51c0d8468bb765e15cfdb2"><div class="ttname"><a href="classsylar_1_1http_1_1HttpRequestParser.html#a57d96b6a7e51c0d8468bb765e15cfdb2">sylar::http::HttpRequestParser::setFinished</a></div><div class="ttdeci">void setFinished(bool v)</div><div class="ttdoc">设置是否解析完成</div><div class="ttdef"><b>Definition:</b> http_parser.h:45</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpRequestParser_html_a74bd07f8c2f84b73cae920186c18dc97"><div class="ttname"><a href="classsylar_1_1http_1_1HttpRequestParser.html#a74bd07f8c2f84b73cae920186c18dc97">sylar::http::HttpRequestParser::execute</a></div><div class="ttdeci">size_t execute(char *data, size_t len)</div><div class="ttdoc">解析协议</div><div class="ttdef"><b>Definition:</b> http_parser.cc:220</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpRequestParser_html_a8660406c5ebc9073d61bbc3824b64bcd"><div class="ttname"><a href="classsylar_1_1http_1_1HttpRequestParser.html#a8660406c5ebc9073d61bbc3824b64bcd">sylar::http::HttpRequestParser::getParser</a></div><div class="ttdeci">const http_parser &amp; getParser() const</div><div class="ttdoc">获取http_parser结构体</div><div class="ttdef"><b>Definition:</b> http_parser.h:67</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpRequestParser_html_aa08f64fcf795790e928bb72764928134"><div class="ttname"><a href="classsylar_1_1http_1_1HttpRequestParser.html#aa08f64fcf795790e928bb72764928134">sylar::http::HttpRequestParser::GetHttpRequestMaxBodySize</a></div><div class="ttdeci">static uint64_t GetHttpRequestMaxBodySize()</div><div class="ttdoc">返回HttpRequest协议的最大消息体大小</div><div class="ttdef"><b>Definition:</b> http_parser.cc:37</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpRequestParser_html_aa09b22d0794220649d324fe7d6a09cc5"><div class="ttname"><a href="classsylar_1_1http_1_1HttpRequestParser.html#aa09b22d0794220649d324fe7d6a09cc5">sylar::http::HttpRequestParser::setField</a></div><div class="ttdeci">void setField(const std::string &amp;v)</div><div class="ttdoc">设置当前的HTTP头部field</div><div class="ttdef"><b>Definition:</b> http_parser.h:77</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpRequestParser_html_aac9c66a4d2461c47ab5039e74a67587d"><div class="ttname"><a href="classsylar_1_1http_1_1HttpRequestParser.html#aac9c66a4d2461c47ab5039e74a67587d">sylar::http::HttpRequestParser::hasError</a></div><div class="ttdeci">int hasError() const</div><div class="ttdoc">是否有错误</div><div class="ttdef"><b>Definition:</b> http_parser.h:51</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpRequestParser_html_ab5e9986cd0098607c5ec98ee73e90eb7"><div class="ttname"><a href="classsylar_1_1http_1_1HttpRequestParser.html#ab5e9986cd0098607c5ec98ee73e90eb7">sylar::http::HttpRequestParser::setError</a></div><div class="ttdeci">void setError(int v)</div><div class="ttdoc">设置错误</div><div class="ttdef"><b>Definition:</b> http_parser.h:57</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpRequestParser_html_af223140b13ef5847f3d571aca1b069e5"><div class="ttname"><a href="classsylar_1_1http_1_1HttpRequestParser.html#af223140b13ef5847f3d571aca1b069e5">sylar::http::HttpRequestParser::getField</a></div><div class="ttdeci">const std::string &amp; getField() const</div><div class="ttdoc">获取当前的HTTP头部field</div><div class="ttdef"><b>Definition:</b> http_parser.h:72</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpRequestParser_html_af3b698fd818508e8c1d3cbacf1f09904"><div class="ttname"><a href="classsylar_1_1http_1_1HttpRequestParser.html#af3b698fd818508e8c1d3cbacf1f09904">sylar::http::HttpRequestParser::HttpRequestParser</a></div><div class="ttdeci">HttpRequestParser()</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>Definition:</b> http_parser.cc:212</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpRequestParser_html_af6ee71d2a1328ab98e5f31bffc5d525d"><div class="ttname"><a href="classsylar_1_1http_1_1HttpRequestParser.html#af6ee71d2a1328ab98e5f31bffc5d525d">sylar::http::HttpRequestParser::isFinished</a></div><div class="ttdeci">int isFinished() const</div><div class="ttdoc">是否解析完成</div><div class="ttdef"><b>Definition:</b> http_parser.h:40</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpRequest_html_a04b3c9ae1818394b618e602b3ba835b8"><div class="ttname"><a href="classsylar_1_1http_1_1HttpRequest.html#a04b3c9ae1818394b618e602b3ba835b8">sylar::http::HttpRequest::ptr</a></div><div class="ttdeci">std::shared_ptr&lt; HttpRequest &gt; ptr</div><div class="ttdoc">HTTP请求的智能指针</div><div class="ttdef"><b>Definition:</b> http.h:132</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpResponseParser_html"><div class="ttname"><a href="classsylar_1_1http_1_1HttpResponseParser.html">sylar::http::HttpResponseParser</a></div><div class="ttdoc">Http响应解析结构体</div><div class="ttdef"><b>Definition:</b> http_parser.h:106</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpResponseParser_html_a1ac606e4a00a24000fb01297821a8eab"><div class="ttname"><a href="classsylar_1_1http_1_1HttpResponseParser.html#a1ac606e4a00a24000fb01297821a8eab">sylar::http::HttpResponseParser::isFinished</a></div><div class="ttdeci">int isFinished() const</div><div class="ttdoc">是否解析完成</div><div class="ttdef"><b>Definition:</b> http_parser.h:128</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpResponseParser_html_a494c5a844ab921bd8a241c7cc3afb63b"><div class="ttname"><a href="classsylar_1_1http_1_1HttpResponseParser.html#a494c5a844ab921bd8a241c7cc3afb63b">sylar::http::HttpResponseParser::GetHttpResponseMaxBodySize</a></div><div class="ttdeci">static uint64_t GetHttpResponseMaxBodySize()</div><div class="ttdoc">返回HTTP响应最大消息体大小</div><div class="ttdef"><b>Definition:</b> http_parser.cc:45</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpResponseParser_html_a80f52d154c8fac9f9689fb34b0560d26"><div class="ttname"><a href="classsylar_1_1http_1_1HttpResponseParser.html#a80f52d154c8fac9f9689fb34b0560d26">sylar::http::HttpResponseParser::GetHttpResponseBufferSize</a></div><div class="ttdeci">static uint64_t GetHttpResponseBufferSize()</div><div class="ttdoc">返回HTTP响应解析缓存大小</div><div class="ttdef"><b>Definition:</b> http_parser.cc:41</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpResponseParser_html_a8688ada9505f299f1c1e00bb3773cdcc"><div class="ttname"><a href="classsylar_1_1http_1_1HttpResponseParser.html#a8688ada9505f299f1c1e00bb3773cdcc">sylar::http::HttpResponseParser::getField</a></div><div class="ttdeci">const std::string &amp; getField() const</div><div class="ttdoc">获取当前的HTTP头部field</div><div class="ttdef"><b>Definition:</b> http_parser.h:159</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpResponseParser_html_a8a78ab960029f95b10bf1ddd02a37b8f"><div class="ttname"><a href="classsylar_1_1http_1_1HttpResponseParser.html#a8a78ab960029f95b10bf1ddd02a37b8f">sylar::http::HttpResponseParser::getParser</a></div><div class="ttdeci">const http_parser &amp; getParser() const</div><div class="ttdoc">返回http_parser</div><div class="ttdef"><b>Definition:</b> http_parser.h:154</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpResponseParser_html_a8e6429a613316bb32b7ba02a1984fb0d"><div class="ttname"><a href="classsylar_1_1http_1_1HttpResponseParser.html#a8e6429a613316bb32b7ba02a1984fb0d">sylar::http::HttpResponseParser::getData</a></div><div class="ttdeci">HttpResponse::ptr getData() const</div><div class="ttdoc">返回HttpResponse</div><div class="ttdef"><b>Definition:</b> http_parser.h:149</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpResponseParser_html_abb68228f9942dcb3504ec9504a6baad3"><div class="ttname"><a href="classsylar_1_1http_1_1HttpResponseParser.html#abb68228f9942dcb3504ec9504a6baad3">sylar::http::HttpResponseParser::hasError</a></div><div class="ttdeci">int hasError() const</div><div class="ttdoc">是否有错误</div><div class="ttdef"><b>Definition:</b> http_parser.h:138</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpResponseParser_html_abcfcf26a8c5b653b0d91562ae16a0480"><div class="ttname"><a href="classsylar_1_1http_1_1HttpResponseParser.html#abcfcf26a8c5b653b0d91562ae16a0480">sylar::http::HttpResponseParser::setField</a></div><div class="ttdeci">void setField(const std::string &amp;v)</div><div class="ttdoc">设置当前的HTTP头部field</div><div class="ttdef"><b>Definition:</b> http_parser.h:164</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpResponseParser_html_ac7303cf793b89e7c1cf2fae9b0e5be44"><div class="ttname"><a href="classsylar_1_1http_1_1HttpResponseParser.html#ac7303cf793b89e7c1cf2fae9b0e5be44">sylar::http::HttpResponseParser::ptr</a></div><div class="ttdeci">std::shared_ptr&lt; HttpResponseParser &gt; ptr</div><div class="ttdoc">智能指针类型</div><div class="ttdef"><b>Definition:</b> http_parser.h:109</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpResponseParser_html_acf7a06bf070f726c61669aba116ae7be"><div class="ttname"><a href="classsylar_1_1http_1_1HttpResponseParser.html#acf7a06bf070f726c61669aba116ae7be">sylar::http::HttpResponseParser::setFinished</a></div><div class="ttdeci">void setFinished(bool v)</div><div class="ttdoc">设置是否解析完成</div><div class="ttdef"><b>Definition:</b> http_parser.h:133</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpResponseParser_html_ae521eed3394982b0c6f1aca73bb68b07"><div class="ttname"><a href="classsylar_1_1http_1_1HttpResponseParser.html#ae521eed3394982b0c6f1aca73bb68b07">sylar::http::HttpResponseParser::HttpResponseParser</a></div><div class="ttdeci">HttpResponseParser()</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>Definition:</b> http_parser.cc:346</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpResponseParser_html_af100bbfe981c8004870a635655132039"><div class="ttname"><a href="classsylar_1_1http_1_1HttpResponseParser.html#af100bbfe981c8004870a635655132039">sylar::http::HttpResponseParser::execute</a></div><div class="ttdeci">size_t execute(char *data, size_t len)</div><div class="ttdoc">解析HTTP响应协议</div><div class="ttdef"><b>Definition:</b> http_parser.cc:354</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpResponseParser_html_afa081cd671b81f4124f3d28eac9586d5"><div class="ttname"><a href="classsylar_1_1http_1_1HttpResponseParser.html#afa081cd671b81f4124f3d28eac9586d5">sylar::http::HttpResponseParser::setError</a></div><div class="ttdeci">void setError(int v)</div><div class="ttdoc">设置错误码</div><div class="ttdef"><b>Definition:</b> http_parser.h:144</div></div>
+<div class="ttc" id="aclasssylar_1_1http_1_1HttpResponse_html_a69535456f2042c35c1a2758fc79f08ca"><div class="ttname"><a href="classsylar_1_1http_1_1HttpResponse.html#a69535456f2042c35c1a2758fc79f08ca">sylar::http::HttpResponse::ptr</a></div><div class="ttdeci">std::shared_ptr&lt; HttpResponse &gt; ptr</div><div class="ttdoc">HTTP响应结构智能指针</div><div class="ttdef"><b>Definition:</b> http.h:506</div></div>
+<div class="ttc" id="ahttp_8h_html"><div class="ttname"><a href="http_8h.html">http.h</a></div><div class="ttdoc">HTTP定义结构体封装</div></div>
+<div class="ttc" id="astructhttp__parser_html"><div class="ttname"><a href="structhttp__parser.html">http_parser</a></div><div class="ttdef"><b>Definition:</b> http_parser.h:293</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

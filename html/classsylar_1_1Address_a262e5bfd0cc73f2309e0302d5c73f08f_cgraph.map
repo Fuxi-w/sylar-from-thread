@@ -1,0 +1,4 @@
+<map id="sylar::Address::GetInterfaceAddresses" name="sylar::Address::GetInterfaceAddresses">
+<area shape="rect" id="node1" title="获取指定网卡的地址和子网掩码位数" alt="" coords="5,5,208,47"/>
+<area shape="rect" id="node2" href="$classsylar_1_1Address.html#a0d92b9aba9dd0b8e1a8a2469f57c5492" title="返回本机所有网卡的&lt;网卡名, 地址, 子网掩码位数&gt;" alt="" coords="256,5,459,47"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" href="$classsylar_1_1Stream.html" title="流结构" alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node2" href="$classsylar_1_1SocketStream.html" title="Socket流" alt="" coords="163,5,315,32"/>
+<area shape="rect" id="node3" href="$classsylar_1_1http_1_1HttpSession.html" title="HTTPSession封装" alt="" coords="363,5,537,32"/>
+</map>

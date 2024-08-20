@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>sylar-from-scratch: sylar::SocketStream类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">sylar-from-scratch
+   </div>
+   <div id="projectbrief">从零开始重写sylar C++高性能分布式服务器框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>sylar</b></li><li class="navelem"><a class="el" href="classsylar_1_1SocketStream.html">SocketStream</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classsylar_1_1SocketStream-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">sylar::SocketStream类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Socket流  
+ <a href="classsylar_1_1SocketStream.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="socket__stream_8h_source.html">socket_stream.h</a>&gt;</code></p>
+<div class="dynheader">
+类 sylar::SocketStream 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1SocketStream__inherit__graph.svg" width="220" height="691"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+sylar::SocketStream 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1SocketStream__coll__graph.svg" width="220" height="536"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a99cc9d12a8054e59ebecdf4a458bbbd3"><td class="memItemLeft" align="right" valign="top"><a id="a99cc9d12a8054e59ebecdf4a458bbbd3"></a>
+typedef std::shared_ptr&lt; <a class="el" href="classsylar_1_1SocketStream.html">SocketStream</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ptr</b></td></tr>
+<tr class="separator:a99cc9d12a8054e59ebecdf4a458bbbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classsylar_1_1Stream"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classsylar_1_1Stream')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="classsylar_1_1Stream.html">sylar::Stream</a></td></tr>
+<tr class="memitem:ad9d5c6252a7e22c9f238f5892aae8a4e inherit pub_types_classsylar_1_1Stream"><td class="memItemLeft" align="right" valign="top"><a id="ad9d5c6252a7e22c9f238f5892aae8a4e"></a>
+typedef std::shared_ptr&lt; <a class="el" href="classsylar_1_1Stream.html">Stream</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ptr</b></td></tr>
+<tr class="separator:ad9d5c6252a7e22c9f238f5892aae8a4e inherit pub_types_classsylar_1_1Stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a376550be0ece546796ee2d0d0426b36d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1SocketStream.html#a376550be0ece546796ee2d0d0426b36d">SocketStream</a> (Socket::ptr sock, bool owner=true)</td></tr>
+<tr class="memdesc:a376550be0ece546796ee2d0d0426b36d"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <a href="classsylar_1_1SocketStream.html#a376550be0ece546796ee2d0d0426b36d">更多...</a><br /></td></tr>
+<tr class="separator:a376550be0ece546796ee2d0d0426b36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbba4ad707a4bc0d21eab4d04edd28f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1SocketStream.html#a7bbba4ad707a4bc0d21eab4d04edd28f">~SocketStream</a> ()</td></tr>
+<tr class="memdesc:a7bbba4ad707a4bc0d21eab4d04edd28f"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <a href="classsylar_1_1SocketStream.html#a7bbba4ad707a4bc0d21eab4d04edd28f">更多...</a><br /></td></tr>
+<tr class="separator:a7bbba4ad707a4bc0d21eab4d04edd28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a7f93e366af1be24080be105044ebdd"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1SocketStream.html#a2a7f93e366af1be24080be105044ebdd">read</a> (void *buffer, size_t length) override</td></tr>
+<tr class="memdesc:a2a7f93e366af1be24080be105044ebdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取数据  <a href="classsylar_1_1SocketStream.html#a2a7f93e366af1be24080be105044ebdd">更多...</a><br /></td></tr>
+<tr class="separator:a2a7f93e366af1be24080be105044ebdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19fdb23efdd62cf29795aaef5767c5b8"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1SocketStream.html#a19fdb23efdd62cf29795aaef5767c5b8">read</a> (ByteArray::ptr ba, size_t length) override</td></tr>
+<tr class="memdesc:a19fdb23efdd62cf29795aaef5767c5b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取数据  <a href="classsylar_1_1SocketStream.html#a19fdb23efdd62cf29795aaef5767c5b8">更多...</a><br /></td></tr>
+<tr class="separator:a19fdb23efdd62cf29795aaef5767c5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ce4f33af88c03846206584a9554a37"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1SocketStream.html#a36ce4f33af88c03846206584a9554a37">write</a> (const void *buffer, size_t length) override</td></tr>
+<tr class="memdesc:a36ce4f33af88c03846206584a9554a37"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入数据  <a href="classsylar_1_1SocketStream.html#a36ce4f33af88c03846206584a9554a37">更多...</a><br /></td></tr>
+<tr class="separator:a36ce4f33af88c03846206584a9554a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8135f71b19a9d1f682ace8279fec8fa3"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1SocketStream.html#a8135f71b19a9d1f682ace8279fec8fa3">write</a> (ByteArray::ptr ba, size_t length) override</td></tr>
+<tr class="memdesc:a8135f71b19a9d1f682ace8279fec8fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入数据  <a href="classsylar_1_1SocketStream.html#a8135f71b19a9d1f682ace8279fec8fa3">更多...</a><br /></td></tr>
+<tr class="separator:a8135f71b19a9d1f682ace8279fec8fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d55b1700e03dfb8da1b5ae8c9ada2c"><td class="memItemLeft" align="right" valign="top"><a id="ab5d55b1700e03dfb8da1b5ae8c9ada2c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1SocketStream.html#ab5d55b1700e03dfb8da1b5ae8c9ada2c">close</a> () override</td></tr>
+<tr class="memdesc:ab5d55b1700e03dfb8da1b5ae8c9ada2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭socket <br /></td></tr>
+<tr class="separator:ab5d55b1700e03dfb8da1b5ae8c9ada2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1f6975f5ce1dd56f317ee55d8e8ab8"><td class="memItemLeft" align="right" valign="top"><a id="a3a1f6975f5ce1dd56f317ee55d8e8ab8"></a>
+Socket::ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1SocketStream.html#a3a1f6975f5ce1dd56f317ee55d8e8ab8">getSocket</a> () const</td></tr>
+<tr class="memdesc:a3a1f6975f5ce1dd56f317ee55d8e8ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回Socket类 <br /></td></tr>
+<tr class="separator:a3a1f6975f5ce1dd56f317ee55d8e8ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a488ce96a03f795dc9d27e35abd4901c7"><td class="memItemLeft" align="right" valign="top"><a id="a488ce96a03f795dc9d27e35abd4901c7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1SocketStream.html#a488ce96a03f795dc9d27e35abd4901c7">isConnected</a> () const</td></tr>
+<tr class="memdesc:a488ce96a03f795dc9d27e35abd4901c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回是否连接 <br /></td></tr>
+<tr class="separator:a488ce96a03f795dc9d27e35abd4901c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb705dcbb9cc35d0ab824f0dd5bf7d6b"><td class="memItemLeft" align="right" valign="top"><a id="adb705dcbb9cc35d0ab824f0dd5bf7d6b"></a>
+Address::ptr&#160;</td><td class="memItemRight" valign="bottom"><b>getRemoteAddress</b> ()</td></tr>
+<tr class="separator:adb705dcbb9cc35d0ab824f0dd5bf7d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6336032caa25921d41582b517d67ac69"><td class="memItemLeft" align="right" valign="top"><a id="a6336032caa25921d41582b517d67ac69"></a>
+Address::ptr&#160;</td><td class="memItemRight" valign="bottom"><b>getLocalAddress</b> ()</td></tr>
+<tr class="separator:a6336032caa25921d41582b517d67ac69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a877834b94a234c8568bf45ca18c22336"><td class="memItemLeft" align="right" valign="top"><a id="a877834b94a234c8568bf45ca18c22336"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getRemoteAddressString</b> ()</td></tr>
+<tr class="separator:a877834b94a234c8568bf45ca18c22336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad756475d10dd09f011b12ab36a97c679"><td class="memItemLeft" align="right" valign="top"><a id="ad756475d10dd09f011b12ab36a97c679"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getLocalAddressString</b> ()</td></tr>
+<tr class="separator:ad756475d10dd09f011b12ab36a97c679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classsylar_1_1Stream"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsylar_1_1Stream')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classsylar_1_1Stream.html">sylar::Stream</a></td></tr>
+<tr class="memitem:a67520125cad49bb3fb4835a36ec56762 inherit pub_methods_classsylar_1_1Stream"><td class="memItemLeft" align="right" valign="top"><a id="a67520125cad49bb3fb4835a36ec56762"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Stream.html#a67520125cad49bb3fb4835a36ec56762">~Stream</a> ()</td></tr>
+<tr class="memdesc:a67520125cad49bb3fb4835a36ec56762 inherit pub_methods_classsylar_1_1Stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数 <br /></td></tr>
+<tr class="separator:a67520125cad49bb3fb4835a36ec56762 inherit pub_methods_classsylar_1_1Stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29dde187e0d744f251e055b038b839c8 inherit pub_methods_classsylar_1_1Stream"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Stream.html#a29dde187e0d744f251e055b038b839c8">readFixSize</a> (void *buffer, size_t length)</td></tr>
+<tr class="memdesc:a29dde187e0d744f251e055b038b839c8 inherit pub_methods_classsylar_1_1Stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">读固定长度的数据  <a href="classsylar_1_1Stream.html#a29dde187e0d744f251e055b038b839c8">更多...</a><br /></td></tr>
+<tr class="separator:a29dde187e0d744f251e055b038b839c8 inherit pub_methods_classsylar_1_1Stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f067c10abfc6e7f19f87bdf0d7a3edb inherit pub_methods_classsylar_1_1Stream"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Stream.html#a4f067c10abfc6e7f19f87bdf0d7a3edb">readFixSize</a> (ByteArray::ptr ba, size_t length)</td></tr>
+<tr class="memdesc:a4f067c10abfc6e7f19f87bdf0d7a3edb inherit pub_methods_classsylar_1_1Stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">读固定长度的数据  <a href="classsylar_1_1Stream.html#a4f067c10abfc6e7f19f87bdf0d7a3edb">更多...</a><br /></td></tr>
+<tr class="separator:a4f067c10abfc6e7f19f87bdf0d7a3edb inherit pub_methods_classsylar_1_1Stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad43a78d1f2c8aa8d4a578e3957960cc inherit pub_methods_classsylar_1_1Stream"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Stream.html#aad43a78d1f2c8aa8d4a578e3957960cc">writeFixSize</a> (const void *buffer, size_t length)</td></tr>
+<tr class="memdesc:aad43a78d1f2c8aa8d4a578e3957960cc inherit pub_methods_classsylar_1_1Stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">写固定长度的数据  <a href="classsylar_1_1Stream.html#aad43a78d1f2c8aa8d4a578e3957960cc">更多...</a><br /></td></tr>
+<tr class="separator:aad43a78d1f2c8aa8d4a578e3957960cc inherit pub_methods_classsylar_1_1Stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f7b4073f75b03ba49aae8c8acee5250 inherit pub_methods_classsylar_1_1Stream"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1Stream.html#a0f7b4073f75b03ba49aae8c8acee5250">writeFixSize</a> (ByteArray::ptr ba, size_t length)</td></tr>
+<tr class="memdesc:a0f7b4073f75b03ba49aae8c8acee5250 inherit pub_methods_classsylar_1_1Stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">写固定长度的数据  <a href="classsylar_1_1Stream.html#a0f7b4073f75b03ba49aae8c8acee5250">更多...</a><br /></td></tr>
+<tr class="separator:a0f7b4073f75b03ba49aae8c8acee5250 inherit pub_methods_classsylar_1_1Stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a358b16565b6adfbf882abb54def5c600"><td class="memItemLeft" align="right" valign="top"><a id="a358b16565b6adfbf882abb54def5c600"></a>
+Socket::ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1SocketStream.html#a358b16565b6adfbf882abb54def5c600">m_socket</a></td></tr>
+<tr class="memdesc:a358b16565b6adfbf882abb54def5c600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Socket类 <br /></td></tr>
+<tr class="separator:a358b16565b6adfbf882abb54def5c600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86cc9c7048fa2577499a5084178081ca"><td class="memItemLeft" align="right" valign="top"><a id="a86cc9c7048fa2577499a5084178081ca"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1SocketStream.html#a86cc9c7048fa2577499a5084178081ca">m_owner</a></td></tr>
+<tr class="memdesc:a86cc9c7048fa2577499a5084178081ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否主控 <br /></td></tr>
+<tr class="separator:a86cc9c7048fa2577499a5084178081ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Socket流 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a376550be0ece546796ee2d0d0426b36d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a376550be0ece546796ee2d0d0426b36d">&#9670;&nbsp;</a></span>SocketStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sylar::SocketStream::SocketStream </td>
+          <td>(</td>
+          <td class="paramtype">Socket::ptr&#160;</td>
+          <td class="paramname"><em>sock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>owner</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sock</td><td>Socket类 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">owner</td><td>是否完全控制 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7bbba4ad707a4bc0d21eab4d04edd28f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bbba4ad707a4bc0d21eab4d04edd28f">&#9670;&nbsp;</a></span>~SocketStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sylar::SocketStream::~SocketStream </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>析构函数 </p>
+<p>如果m_owner=true,则close </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a19fdb23efdd62cf29795aaef5767c5b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19fdb23efdd62cf29795aaef5767c5b8">&#9670;&nbsp;</a></span>read() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sylar::SocketStream::read </td>
+          <td>(</td>
+          <td class="paramtype">ByteArray::ptr&#160;</td>
+          <td class="paramname"><em>ba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>读取数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ba</td><td>接收数据的ByteArray </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>待接收数据的内存长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>返回实际接收到的数据长度 </td></tr>
+    <tr><td class="paramname">=0</td><td>socket被远端关闭 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>socket错误 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>实现了 <a class="el" href="classsylar_1_1Stream.html#a3eff9c660adf8339885e91f06daddae1">sylar::Stream</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1SocketStream_a19fdb23efdd62cf29795aaef5767c5b8_cgraph.svg" width="363" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a2a7f93e366af1be24080be105044ebdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a7f93e366af1be24080be105044ebdd">&#9670;&nbsp;</a></span>read() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sylar::SocketStream::read </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>读取数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>待接收数据的内存 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>待接收数据的内存长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>返回实际接收到的数据长度 </td></tr>
+    <tr><td class="paramname">=0</td><td>socket被远端关闭 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>socket错误 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>实现了 <a class="el" href="classsylar_1_1Stream.html#a0901dfdec95a25aee92b0d82360b4e13">sylar::Stream</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1SocketStream_a2a7f93e366af1be24080be105044ebdd_cgraph.svg" width="363" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a8135f71b19a9d1f682ace8279fec8fa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8135f71b19a9d1f682ace8279fec8fa3">&#9670;&nbsp;</a></span>write() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sylar::SocketStream::write </td>
+          <td>(</td>
+          <td class="paramtype">ByteArray::ptr&#160;</td>
+          <td class="paramname"><em>ba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>写入数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ba</td><td>待发送数据的ByteArray </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>待发送数据的内存长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>返回实际接收到的数据长度 </td></tr>
+    <tr><td class="paramname">=0</td><td>socket被远端关闭 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>socket错误 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>实现了 <a class="el" href="classsylar_1_1Stream.html#a3fb968a29622bcf27913b20633895a97">sylar::Stream</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1SocketStream_a8135f71b19a9d1f682ace8279fec8fa3_cgraph.svg" width="363" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a36ce4f33af88c03846206584a9554a37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ce4f33af88c03846206584a9554a37">&#9670;&nbsp;</a></span>write() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sylar::SocketStream::write </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>写入数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>待发送数据的内存 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>待发送数据的内存长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>返回实际接收到的数据长度 </td></tr>
+    <tr><td class="paramname">=0</td><td>socket被远端关闭 </td></tr>
+    <tr><td class="paramname">&lt;0</td><td>socket错误 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>实现了 <a class="el" href="classsylar_1_1Stream.html#a3f228e40abdf4462268b871614e9d5a1">sylar::Stream</a>.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1SocketStream_a36ce4f33af88c03846206584a9554a37_cgraph.svg" width="363" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>sylar/streams/<a class="el" href="socket__stream_8h_source.html">socket_stream.h</a></li>
+<li>sylar/streams/socket_stream.cc</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

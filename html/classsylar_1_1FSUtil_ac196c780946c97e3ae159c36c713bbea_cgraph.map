@@ -1,0 +1,5 @@
+<map id="sylar::FSUtil::OpenForWrite" name="sylar::FSUtil::OpenForWrite">
+<area shape="rect" id="node1" title="以只写方式打开" alt="" coords="5,31,203,57"/>
+<area shape="rect" id="node2" href="$classsylar_1_1FSUtil.html#aa25b73f8771c2188aeb366da4ee8b76d" title="返回文件，即路径中最后一个/前面的部分，不包括/本身，如果未找到，则返回filename" alt="" coords="251,5,415,32"/>
+<area shape="rect" id="node3" href="$classsylar_1_1FSUtil.html#aff8e1690b306cbb5d66586c77377c683" title="创建路径，相当于mkdir &#45;p" alt="" coords="260,56,405,83"/>
+</map>

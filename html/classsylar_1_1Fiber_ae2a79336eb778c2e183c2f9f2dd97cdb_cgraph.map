@@ -1,0 +1,5 @@
+<map id="sylar::Fiber::yield" name="sylar::Fiber::yield">
+<area shape="rect" id="node1" title="当前协程让出执行权" alt="" coords="5,42,140,69"/>
+<area shape="rect" id="node2" href="$classsylar_1_1Scheduler.html#a8b802736f5c20b477def0838b92804cf" title="获取当前线程的主协程" alt="" coords="188,5,377,47"/>
+<area shape="rect" id="node3" href="$classsylar_1_1Fiber.html#a600311d8bef1d565f02373d425d7e482" title="设置当前正在运行的协程，即设置线程局部变量t_fiber的值" alt="" coords="207,71,358,98"/>
+</map>

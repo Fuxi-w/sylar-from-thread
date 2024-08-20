@@ -1,0 +1,4 @@
+<map id="sylar::ByteArray::getReadBuffers" name="sylar::ByteArray::getReadBuffers">
+<area shape="rect" id="node1" title="获取可读取的缓存,保存成iovec数组" alt="" coords="5,5,193,47"/>
+<area shape="rect" id="node2" href="$classsylar_1_1ByteArray.html#a763d792f91cfd84072692ac0cdef8efc" title="返回可读取数据大小" alt="" coords="241,13,456,39"/>
+</map>

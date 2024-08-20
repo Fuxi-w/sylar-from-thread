@@ -1,0 +1,5 @@
+<map id="sylar::ByteArray::writeStringVint" name="sylar::ByteArray::writeStringVint">
+<area shape="rect" id="node1" title="写入std::string类型的数据,用无符号Varint64作为长度类型" alt="" coords="5,5,236,32"/>
+<area shape="rect" id="node2" href="$classsylar_1_1ByteArray.html#aa02ff9c7ab29ee312e3ad8043acf28dc" title="写入size长度的数据" alt="" coords="543,5,709,32"/>
+<area shape="rect" id="node3" href="$classsylar_1_1ByteArray.html#aea9565d96c17bb40b36902cb2910549f" title="写入无符号Varint64类型的数据" alt="" coords="284,31,495,57"/>
+</map>

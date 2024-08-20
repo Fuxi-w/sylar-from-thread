@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>sylar-from-scratch: sylar::LogEvent类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">sylar-from-scratch
+   </div>
+   <div id="projectbrief">从零开始重写sylar C++高性能分布式服务器框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>sylar</b></li><li class="navelem"><a class="el" href="classsylar_1_1LogEvent.html">LogEvent</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classsylar_1_1LogEvent-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">sylar::LogEvent类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>日志事件  
+ <a href="classsylar_1_1LogEvent.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="log_8h_source.html">log.h</a>&gt;</code></p>
+<div class="dynheader">
+sylar::LogEvent 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsylar_1_1LogEvent__coll__graph.svg" width="163" height="279"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a5edba5d4e7c7b90edc5585716065f497"><td class="memItemLeft" align="right" valign="top"><a id="a5edba5d4e7c7b90edc5585716065f497"></a>
+typedef std::shared_ptr&lt; <a class="el" href="classsylar_1_1LogEvent.html">LogEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ptr</b></td></tr>
+<tr class="separator:a5edba5d4e7c7b90edc5585716065f497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a0e04ad7c35d18f7383b8b1215871e79a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogEvent.html#a0e04ad7c35d18f7383b8b1215871e79a">LogEvent</a> (const std::string &amp;logger_name, <a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271b">LogLevel::Level</a> level, const char *file, int32_t line, int64_t elapse, uint32_t thread_id, uint64_t fiber_id, time_t time, const std::string &amp;thread_name)</td></tr>
+<tr class="memdesc:a0e04ad7c35d18f7383b8b1215871e79a"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <a href="classsylar_1_1LogEvent.html#a0e04ad7c35d18f7383b8b1215871e79a">更多...</a><br /></td></tr>
+<tr class="separator:a0e04ad7c35d18f7383b8b1215871e79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a661f70eb36b2cc1dcca4f3dd602087ed"><td class="memItemLeft" align="right" valign="top"><a id="a661f70eb36b2cc1dcca4f3dd602087ed"></a>
+<a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271b">LogLevel::Level</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogEvent.html#a661f70eb36b2cc1dcca4f3dd602087ed">getLevel</a> () const</td></tr>
+<tr class="memdesc:a661f70eb36b2cc1dcca4f3dd602087ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取日志级别 <br /></td></tr>
+<tr class="separator:a661f70eb36b2cc1dcca4f3dd602087ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a44ff908b0afa2b782c0936b799330"><td class="memItemLeft" align="right" valign="top"><a id="a13a44ff908b0afa2b782c0936b799330"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogEvent.html#a13a44ff908b0afa2b782c0936b799330">getContent</a> () const</td></tr>
+<tr class="memdesc:a13a44ff908b0afa2b782c0936b799330"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取日志内容 <br /></td></tr>
+<tr class="separator:a13a44ff908b0afa2b782c0936b799330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2035fd9e4fbae22a4c4a9bf3bd39896d"><td class="memItemLeft" align="right" valign="top"><a id="a2035fd9e4fbae22a4c4a9bf3bd39896d"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogEvent.html#a2035fd9e4fbae22a4c4a9bf3bd39896d">getFile</a> () const</td></tr>
+<tr class="memdesc:a2035fd9e4fbae22a4c4a9bf3bd39896d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取文件名 <br /></td></tr>
+<tr class="separator:a2035fd9e4fbae22a4c4a9bf3bd39896d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1df35550e5e274c398cc612fe177607"><td class="memItemLeft" align="right" valign="top"><a id="ab1df35550e5e274c398cc612fe177607"></a>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogEvent.html#ab1df35550e5e274c398cc612fe177607">getLine</a> () const</td></tr>
+<tr class="memdesc:ab1df35550e5e274c398cc612fe177607"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取行号 <br /></td></tr>
+<tr class="separator:ab1df35550e5e274c398cc612fe177607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad170b76f69ca292ae95d42370a2dd595"><td class="memItemLeft" align="right" valign="top"><a id="ad170b76f69ca292ae95d42370a2dd595"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogEvent.html#ad170b76f69ca292ae95d42370a2dd595">getElapse</a> () const</td></tr>
+<tr class="memdesc:ad170b76f69ca292ae95d42370a2dd595"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取累计运行毫秒数 <br /></td></tr>
+<tr class="separator:ad170b76f69ca292ae95d42370a2dd595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa22e196bd8d83b88c7ce7a7588b7d5f3"><td class="memItemLeft" align="right" valign="top"><a id="aa22e196bd8d83b88c7ce7a7588b7d5f3"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogEvent.html#aa22e196bd8d83b88c7ce7a7588b7d5f3">getThreadId</a> () const</td></tr>
+<tr class="memdesc:aa22e196bd8d83b88c7ce7a7588b7d5f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取线程id <br /></td></tr>
+<tr class="separator:aa22e196bd8d83b88c7ce7a7588b7d5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae407a809a025d565ac1c0a8949197561"><td class="memItemLeft" align="right" valign="top"><a id="ae407a809a025d565ac1c0a8949197561"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogEvent.html#ae407a809a025d565ac1c0a8949197561">getFiberId</a> () const</td></tr>
+<tr class="memdesc:ae407a809a025d565ac1c0a8949197561"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取协程id <br /></td></tr>
+<tr class="separator:ae407a809a025d565ac1c0a8949197561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ee277ed28c08365c190411eacabfda"><td class="memItemLeft" align="right" valign="top"><a id="a22ee277ed28c08365c190411eacabfda"></a>
+time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogEvent.html#a22ee277ed28c08365c190411eacabfda">getTime</a> () const</td></tr>
+<tr class="memdesc:a22ee277ed28c08365c190411eacabfda"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回时间戳 <br /></td></tr>
+<tr class="separator:a22ee277ed28c08365c190411eacabfda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b6978874ffa58b007d5847268f3413"><td class="memItemLeft" align="right" valign="top"><a id="af6b6978874ffa58b007d5847268f3413"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogEvent.html#af6b6978874ffa58b007d5847268f3413">getThreadName</a> () const</td></tr>
+<tr class="memdesc:af6b6978874ffa58b007d5847268f3413"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取线程名称 <br /></td></tr>
+<tr class="separator:af6b6978874ffa58b007d5847268f3413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af67850c4ccc3250ca62bae0b4371ca70"><td class="memItemLeft" align="right" valign="top"><a id="af67850c4ccc3250ca62bae0b4371ca70"></a>
+std::stringstream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogEvent.html#af67850c4ccc3250ca62bae0b4371ca70">getSS</a> ()</td></tr>
+<tr class="memdesc:af67850c4ccc3250ca62bae0b4371ca70"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取内容字节流，用于流式写入日志 <br /></td></tr>
+<tr class="separator:af67850c4ccc3250ca62bae0b4371ca70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ed63a061120fe858690c3745eab036"><td class="memItemLeft" align="right" valign="top"><a id="ac0ed63a061120fe858690c3745eab036"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogEvent.html#ac0ed63a061120fe858690c3745eab036">getLoggerName</a> () const</td></tr>
+<tr class="memdesc:ac0ed63a061120fe858690c3745eab036"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取日志器名称 <br /></td></tr>
+<tr class="separator:ac0ed63a061120fe858690c3745eab036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e6ffd60ecd585a3e1bcab0636681932"><td class="memItemLeft" align="right" valign="top"><a id="a2e6ffd60ecd585a3e1bcab0636681932"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogEvent.html#a2e6ffd60ecd585a3e1bcab0636681932">printf</a> (const char *fmt,...)</td></tr>
+<tr class="memdesc:a2e6ffd60ecd585a3e1bcab0636681932"><td class="mdescLeft">&#160;</td><td class="mdescRight">C prinf风格写入日志 <br /></td></tr>
+<tr class="separator:a2e6ffd60ecd585a3e1bcab0636681932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41fd126b112ec25de77b2545e12a8f78"><td class="memItemLeft" align="right" valign="top"><a id="a41fd126b112ec25de77b2545e12a8f78"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsylar_1_1LogEvent.html#a41fd126b112ec25de77b2545e12a8f78">vprintf</a> (const char *fmt, va_list ap)</td></tr>
+<tr class="memdesc:a41fd126b112ec25de77b2545e12a8f78"><td class="mdescLeft">&#160;</td><td class="mdescRight">C vprintf风格写入日志 <br /></td></tr>
+<tr class="separator:a41fd126b112ec25de77b2545e12a8f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>日志事件 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a0e04ad7c35d18f7383b8b1215871e79a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e04ad7c35d18f7383b8b1215871e79a">&#9670;&nbsp;</a></span>LogEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sylar::LogEvent::LogEvent </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>logger_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classsylar_1_1LogLevel.html#aa16de1ee1263beffb6f17ba6deb0271b">LogLevel::Level</a>&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>elapse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>thread_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>fiber_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>thread_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">logger_name</td><td>日志器名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>日志级别 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>文件名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>行号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">elapse</td><td>从日志器创建开始到当前的累计运行毫秒 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">thead_id</td><td>线程id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fiber_id</td><td>协程id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">time</td><td>UTC时间 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">thread_name</td><td>线程名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>sylar/<a class="el" href="log_8h_source.html">log.h</a></li>
+<li>sylar/<a class="el" href="log_8cpp.html">log.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

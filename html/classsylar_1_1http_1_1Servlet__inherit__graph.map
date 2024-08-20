@@ -1,0 +1,6 @@
+<map id="sylar::http::Servlet" name="sylar::http::Servlet">
+<area shape="rect" id="node1" title="Servlet封装" alt="" coords="258,5,401,127"/>
+<area shape="rect" id="node2" href="$classsylar_1_1http_1_1FunctionServlet.html" title="函数式Servlet" alt="" coords="5,241,203,333"/>
+<area shape="rect" id="node3" href="$classsylar_1_1http_1_1NotFoundServlet.html" title="NotFoundServlet(默认返回404)" alt="" coords="227,241,431,333"/>
+<area shape="rect" id="node4" href="$classsylar_1_1http_1_1ServletDispatch.html" title="Servlet分发器" alt="" coords="455,175,654,399"/>
+</map>
